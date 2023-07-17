@@ -16,9 +16,9 @@ export class SplashPage implements OnInit, AfterViewInit {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    //  setTimeout(() => {
-    //   this.router.navigateByUrl('home');
-    // }, 5000)
+     setTimeout(() => {
+      this.router.navigateByUrl('home');
+    }, 5000)
     this.words = ['Web Developer'];
   }
 
