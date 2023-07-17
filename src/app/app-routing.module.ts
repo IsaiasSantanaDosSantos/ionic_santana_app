@@ -3,13 +3,21 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'Inbox',
     redirectTo: 'folder/Inbox',
     pathMatch: 'full'
   },
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: '',
+    loadChildren: () => import('./pages/splash/splash.module').then( m => m.SplashPageModule)
   }
 ];
 
