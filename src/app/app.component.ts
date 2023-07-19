@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import { TranslateService } from '@ngx-translate/core'
+
 @Component({
   selector: "app-root",
   templateUrl: "app.component.html",
@@ -21,5 +23,12 @@ export class AppComponent {
     // { title: "Spam", url: "/folder/spam", icon: "warning" },
   ];
   public labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];
-  constructor() {}
+  constructor(private translate: TranslateService) {
+    this.initializeApp();
+  }
+
+  initializeApp(){
+    this.translate.setDefaultLang('en');
+    this.translate.use('en')
+  }
 }

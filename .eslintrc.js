@@ -22,6 +22,6 @@ module.exports = {
   plugins: ["@typescript-eslint", "prettier"],
   rules: {
     "prettier/prettier": "off",
-    // "@typescript-eslint/no-unused-vars": "off", // is assigned a value but never used
+    // "@typescript-eslint/no-unused-vars": "off", // is assigned a value but never use
   },
 };
