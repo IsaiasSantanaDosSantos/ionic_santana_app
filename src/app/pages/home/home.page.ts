@@ -20,13 +20,13 @@ export class HomePage implements OnInit {
   ngOnInit() {
     this.words = ["Santana", "Web", "Developer"];
     this.images = [
-      "assets/img/mobile-background-3.jpg",
-      "assets/img/mobile-background-4.jpg",
-      "assets/img/mobile-background-5.jpg",
-      "assets/img/mobile-background-6.jpg",
-      "assets/img/mobile-background-7.jpg",
-      "assets/img/mobile-background-8.jpg",
-      "assets/img/mobile-background-9.webp",
+      "assets/img/background-1.jpg",
+      "assets/img/background-2.jpg",
+      "assets/img/background-3.jpg",
+      "assets/img/background-4.jpg",
+      "assets/img/background-5.jpg",
+      "assets/img/background-6.jpg",
+      "assets/img/background-7.jpg",
     ];
   }
   ngAfterViewInit() {
