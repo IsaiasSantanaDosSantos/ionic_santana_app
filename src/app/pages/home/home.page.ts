@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterContentInit } from "@angular/core";
+import { NavController } from "@ionic/angular";
 import { TranslateService } from "@ngx-translate/core";
 
 @Component({
@@ -14,11 +15,12 @@ export class HomePage implements OnInit {
   images: string[] = [];
   currentImageIndex = 0;
   isEnglish = true;
+  selectedLanguage: string = "gb";
 
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService, public nav: NavController) {}
 
   ngOnInit() {
-    this.words = ["Santana", "Web", "Developer"];
+    this.toggleLanguage();
     this.images = [
       "assets/img/background-1.jpg",
       "assets/img/background-2.jpg",
@@ -88,9 +90,16 @@ export class HomePage implements OnInit {
   toggleLanguage() {
     if (this.isEnglish) {
       this.translate.use("pt");
+      this.selectedLanguage = "pt";
+      this.words = ["Desenvolvedor", "Web", "Santana"];
     } else {
       this.translate.use("en");
+      this.selectedLanguage = "gb";
+      this.words = ["Santana", "Web", "Developer"];
     }
     this.isEnglish = !this.isEnglish;
+  }
+  toPortfolioPage(){
+    this.nav.navigateForward('portfolio')
   }
 }
