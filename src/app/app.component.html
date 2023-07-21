@@ -27,6 +27,18 @@
           </ion-menu-toggle>
         </ion-list>
       </ion-content>
+      <!-- <ion-list>
+        <ion-item> -->
+      <span
+        class="translateBtn flag-icon flag-icon-br"
+        (click)="toggleLanguage()"
+        [ngClass]="{
+          'flag-icon-gb': selectedLanguage === 'pt',
+          'flag-icon-br': selectedLanguage === 'gb'
+        }"
+      ></span>
+      <!-- </ion-item>
+      </ion-list> -->
 
       <p class="phaseJesus"><span class="JesusName">Jesus</span> is the way!</p>
     </ion-menu>

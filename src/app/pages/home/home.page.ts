@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterContentInit } from "@angular/core";
 import { NavController } from "@ionic/angular";
 import { TranslateService } from "@ngx-translate/core";
+import { LanguageService } from "../../language.service";
 
 @Component({
   selector: "app-home",
@@ -14,13 +15,17 @@ export class HomePage implements OnInit {
   dinamic_text_value = "";
   images: string[] = [];
   currentImageIndex = 0;
-  isEnglish = true;
-  selectedLanguage: string = "gb";
 
-  constructor(private translate: TranslateService, public nav: NavController) {}
+  constructor(
+    private translate: TranslateService,
+    public nav: NavController,
+    private languageService: LanguageService,
+  ) {}
 
   ngOnInit() {
-    this.toggleLanguage();
+    this.languageService.toggleLanguage();
+    this.words = this.languageService.getWords();
+    // this.toggleLanguage();
     this.images = [
       "assets/img/background-1.jpg",
       "assets/img/background-2.jpg",
@@ -48,13 +53,13 @@ export class HomePage implements OnInit {
       this.isDeleting = true;
       setTimeout(() => {
         this.type();
-      }, 1000); // Tempo para manter a palavra completa antes de iniciar a exclusão
+      }, 1000); 
     } else if (isDeletingComplete) {
       this.currentWordIndex = (this.currentWordIndex + 1) % this.words.length;
       setTimeout(() => {
         this.isDeleting = false;
         this.type();
-      }, 500); // Tempo antes de começar a digitar a próxima palavra
+      }, 500); 
     } else if (this.isDeleting) {
       this.dinamic_text_value = currentWord.slice(
         0,
@@ -62,7 +67,7 @@ export class HomePage implements OnInit {
       );
       setTimeout(() => {
         this.type();
-      }, 100); // Tempo entre a exclusão de cada letra
+      }, 100); 
     } else {
       this.dinamic_text_value = currentWord.slice(
         0,
@@ -70,7 +75,7 @@ export class HomePage implements OnInit {
       );
       setTimeout(() => {
         this.type();
-      }, 100); // Tempo entre a digitação de cada letra
+      }, 100); 
     }
   }
   rotateImages() {
@@ -87,19 +92,10 @@ export class HomePage implements OnInit {
   getTranslated(key: string): string {
     return this.translate.instant(key);
   }
-  toggleLanguage() {
-    if (this.isEnglish) {
-      this.translate.use("pt");
-      this.selectedLanguage = "pt";
-      this.words = ["Desenvolvedor", "Web", "Santana"];
-    } else {
-      this.translate.use("en");
-      this.selectedLanguage = "gb";
-      this.words = ["Santana", "Web", "Developer"];
-    }
-    this.isEnglish = !this.isEnglish;
-  }
-  toPortfolioPage(){
-    this.nav.navigateForward('portfolio')
+  // toggleLanguage() {
+  //   this.words = this.languageService.getWords();
+  // }
+  toPortfolioPage() {
+    this.nav.navigateForward("portfolio");
   }
 }

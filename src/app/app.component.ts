@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
-import { TranslateService } from '@ngx-translate/core'
+import { TranslateService } from "@ngx-translate/core";
+import { LanguageService } from "./language.service";
 
 @Component({
   selector: "app-root",
@@ -22,13 +23,27 @@ export class AppComponent {
     // { title: "Trash", url: "/folder/trash", icon: "trash" },
     // { title: "Spam", url: "/folder/spam", icon: "warning" },
   ];
+  selectedLanguage: string = "pt";
+
   public labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];
-  constructor(private translate: TranslateService) {
+  constructor(
+    private translate: TranslateService,
+    private languageService: LanguageService,
+  ) {
     this.initializeApp();
   }
 
-  initializeApp(){
-    this.translate.setDefaultLang('en');
-    this.translate.use('en')
+  initializeApp() {
+    this.translate.setDefaultLang("en");
+    this.translate.use("en");
+  }
+  toggleLanguage() {
+    this.languageService.toggleLanguage();
+    if (this.languageService.getSelectedLanguage() === "pt") {
+      this.selectedLanguage = "gb";
+    }
+    if (this.languageService.getSelectedLanguage() === "gb") {
+      this.selectedLanguage = "pt";
+    }
   }
 }
