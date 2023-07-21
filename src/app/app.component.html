@@ -3,7 +3,9 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>Santana Web Dev</ion-list-header>
+          <ion-list-header>{{
+            getTranslated("MENU.MENU_TITLE")
+          }}</ion-list-header>
 
           <ion-menu-toggle
             auto-hide="false"
@@ -30,10 +32,10 @@
       <!-- <ion-list>
         <ion-item> -->
       <span
-        class="translateBtn flag-icon flag-icon-br"
+        class="translateBtn flag-icon flag-icon-gb"
         (click)="toggleLanguage()"
         [ngClass]="{
-          'flag-icon-gb': selectedLanguage === 'pt',
+          'flag-icon-gb': selectedLanguage === 'br',
           'flag-icon-br': selectedLanguage === 'gb'
         }"
       ></span>

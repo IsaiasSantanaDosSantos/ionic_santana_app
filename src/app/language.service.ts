@@ -5,7 +5,6 @@ import { TranslateService } from "@ngx-translate/core";
   providedIn: "root",
 })
 export class LanguageService {
-  // isEnglish = true;
   selectedLanguage: string = "gb";
 
   constructor(private translate: TranslateService) {}
@@ -18,16 +17,14 @@ export class LanguageService {
       this.translate.use("en");
       this.selectedLanguage = "gb";
     }
-    // this.isEnglish = !this.isEnglish;
-
-    // return this.isEnglish;
+    console.log(this.getWords());
   }
 
   getSelectedLanguage(): string {
     return this.selectedLanguage;
   }
   getWords(): string[] {
-    return this.selectedLanguage === "en"
+    return this.selectedLanguage === "gb"
       ? ["Santana", "Web", "Developer"]
       : ["Desenvolvedor", "Web", "Santana"];
   }
