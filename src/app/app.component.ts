@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { TranslateService } from "@ngx-translate/core";
 import { LanguageService } from "./language.service";
 
@@ -8,6 +8,26 @@ import { LanguageService } from "./language.service";
   styleUrls: ["app.component.scss"],
 })
 export class AppComponent {
+  //Criei este array para tentar fazer algo na tradução do Menu
+  enghLinks: string[] = [
+    "Home",
+    "About",
+    "Services",
+    "Resume",
+    "Portfolio",
+    "References",
+    "Contact",
+  ];
+  portLinks: string[] = [
+    "Início",
+    "Sobre",
+    "Serviços",
+    "Currículo",
+    "Portfólio",
+    "Referências",
+    "Contatos",
+  ];
+
   public appPages = [
     { title: "Home", url: "/home", icon: "home" },
     { title: "About", url: "/about", icon: "people" },
@@ -23,7 +43,7 @@ export class AppComponent {
     // { title: "Trash", url: "/folder/trash", icon: "trash" },
     // { title: "Spam", url: "/folder/spam", icon: "warning" },
   ];
-  selectedLanguage: string = "pt";
+  selectedLanguage: string = "br";
 
   public labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];
   constructor(
@@ -39,11 +59,15 @@ export class AppComponent {
   }
   toggleLanguage() {
     this.languageService.toggleLanguage();
-    if (this.languageService.getSelectedLanguage() === "pt") {
+    if (this.languageService.getSelectedLanguage() === "gb") {
       this.selectedLanguage = "gb";
     }
-    if (this.languageService.getSelectedLanguage() === "gb") {
-      this.selectedLanguage = "pt";
+    if (this.languageService.getSelectedLanguage() === "br") {
+      this.selectedLanguage = "br";
     }
+    this.languageService.getWords();
+  }
+  getTranslated(key: string): string {
+    return this.translate.instant(key);
   }
 }

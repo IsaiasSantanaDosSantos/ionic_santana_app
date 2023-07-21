@@ -23,8 +23,10 @@ export class HomePage implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.languageService.toggleLanguage();
-    this.words = this.languageService.getWords();
+    // this.languageService.toggleLanguage();
+    // this.words = this.languageService.toggleLanguage();
+    //REMOVE ↓
+    // this.words = this.languageService.getWords();
     // this.toggleLanguage();
     this.images = [
       "assets/img/background-1.jpg",
@@ -35,6 +37,12 @@ export class HomePage implements OnInit {
       "assets/img/background-6.jpg",
       "assets/img/background-7.jpg",
     ];
+  }
+
+  ngAfterContentInit() {
+    // Obtem as palavras do LanguageService ao inicializar a página
+    this.words = this.languageService.getWords();
+    // Restante do código necessário
   }
   ngAfterViewInit() {
     setTimeout(() => {
@@ -53,13 +61,13 @@ export class HomePage implements OnInit {
       this.isDeleting = true;
       setTimeout(() => {
         this.type();
-      }, 1000); 
+      }, 1000);
     } else if (isDeletingComplete) {
       this.currentWordIndex = (this.currentWordIndex + 1) % this.words.length;
       setTimeout(() => {
         this.isDeleting = false;
         this.type();
-      }, 500); 
+      }, 500);
     } else if (this.isDeleting) {
       this.dinamic_text_value = currentWord.slice(
         0,
@@ -67,7 +75,7 @@ export class HomePage implements OnInit {
       );
       setTimeout(() => {
         this.type();
-      }, 100); 
+      }, 100);
     } else {
       this.dinamic_text_value = currentWord.slice(
         0,
@@ -75,7 +83,7 @@ export class HomePage implements OnInit {
       );
       setTimeout(() => {
         this.type();
-      }, 100); 
+      }, 100);
     }
   }
   rotateImages() {
@@ -92,9 +100,6 @@ export class HomePage implements OnInit {
   getTranslated(key: string): string {
     return this.translate.instant(key);
   }
-  // toggleLanguage() {
-  //   this.words = this.languageService.getWords();
-  // }
   toPortfolioPage() {
     this.nav.navigateForward("portfolio");
   }

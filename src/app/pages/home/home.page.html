@@ -2,12 +2,6 @@
   <ion-toolbar>
     <ion-menu-button slot="start"></ion-menu-button>
     <ion-title>{{ getTranslated('HOME.PAGE_TITLE') }}</ion-title>
-    <!-- <button slot="end" class="translateBtn" (click)="toggleLanguage()">
-      <span
-        class="flag-icon flag-icon-br"
-        [ngClass]="{'flag-icon-gb': selectedLanguage === 'pt', 'flag-icon-br': selectedLanguage === 'gb'}"
-      ></span>
-    </button> -->
   </ion-toolbar>
 </ion-header>
 
@@ -21,11 +15,9 @@
         {{ dinamic_text_value }} <span class="focusText"></span>
       </p>
       <h1 class="homeSubTitle">{{ getTranslated('HOME.SUBTITLE') }}</h1>
-      <a class="homeBtn" (click)="toPortfolioPage()">{{ getTranslated('HOME.BUTTON_LABEL') }}</a>
-      <!-- <button class="translateBtn" (click)="toggleLanguage()">
-        <span class="flag-icon flag-icon-br"></span>
-      </button> -->
+      <a class="homeBtn" (click)="toPortfolioPage()"
+        >{{ getTranslated('HOME.BUTTON_LABEL') }}</a
+      >
     </div>
   </div>
 </ion-content>
-<!-- {{ getTranslated('HOME.') }} -->
