@@ -118,6 +118,21 @@ ion-item.selected {
   --color: var(--ion-color-primary);
 }
 
+.translateBtn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: auto;
+}
+.flag-icon {
+  font-size: 25px;
+  transition: all 0.4s;
+  box-shadow: 0 0 22px -7px var(--secundaryColor);
+}
+.flag-icon:hover {
+  transform: scale(1.03);
+}
+
 .phaseJesus {
 width: 100%;
 display: flex;
