@@ -20,7 +20,7 @@ export class AppComponent {
   ];
   selectedLanguage: string = "gb";
 
-  public labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];
+  // public labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];
   constructor(
     private translate: TranslateService,
     private languageService: LanguageService,
