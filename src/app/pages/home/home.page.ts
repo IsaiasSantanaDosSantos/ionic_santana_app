@@ -9,7 +9,7 @@ import { LanguageService } from "../../language.service";
   styleUrls: ["./home.page.scss"],
 })
 export class HomePage implements OnInit {
-  words: string[] = [];
+  // words: string[] = [];
   currentWordIndex = 0;
   isDeleting = false;
   dinamic_text_value = "";
@@ -23,11 +23,6 @@ export class HomePage implements OnInit {
   ) {}
 
   ngOnInit() {
-    // this.languageService.toggleLanguage();
-    // this.words = this.languageService.toggleLanguage();
-    //REMOVE ↓
-    // this.words = this.languageService.getWords();
-    // this.toggleLanguage();
     this.images = [
       "assets/img/background-1.jpg",
       "assets/img/background-2.jpg",
@@ -39,11 +34,6 @@ export class HomePage implements OnInit {
     ];
   }
 
-  ngAfterContentInit() {
-    // Obtem as palavras do LanguageService ao inicializar a página
-    this.words = this.languageService.getWords();
-    // Restante do código necessário
-  }
   ngAfterViewInit() {
     setTimeout(() => {
       this.type();
@@ -51,7 +41,7 @@ export class HomePage implements OnInit {
     }, 1500);
   }
   type() {
-    const currentWord = this.words[this.currentWordIndex];
+    const currentWord = this.languageService.getWords()[this.currentWordIndex];
     const isComplete =
       !this.isDeleting && this.dinamic_text_value === currentWord;
     const isDeletingComplete =
@@ -63,7 +53,8 @@ export class HomePage implements OnInit {
         this.type();
       }, 1000);
     } else if (isDeletingComplete) {
-      this.currentWordIndex = (this.currentWordIndex + 1) % this.words.length;
+      this.currentWordIndex =
+        (this.currentWordIndex + 1) % this.languageService.getWords().length;
       setTimeout(() => {
         this.isDeleting = false;
         this.type();

@@ -17,7 +17,6 @@ export class LanguageService {
       this.translate.use("en");
       this.selectedLanguage = "gb";
     }
-    console.log(this.getWords());
   }
 
   getSelectedLanguage(): string {

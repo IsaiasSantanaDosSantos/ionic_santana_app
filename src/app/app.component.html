@@ -3,10 +3,13 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>{{
-            getTranslated("MENU.MENU_TITLE")
-          }}</ion-list-header>
-
+          <ion-list-header>
+            <span class="logoAnimate">
+              <h1 class="logoTitle"><span class="titleMask"></span>Santana</h1>
+              <p #logoSubtitle class="logoSubtitle">{{ text }}</p>
+            </span>
+          </ion-list-header>
+          <!-- {{getTranslated("MENU.MENU_TITLE")}} -->
           <ion-menu-toggle
             auto-hide="false"
             *ngFor="let p of appPages; let i = index"
@@ -42,7 +45,10 @@
       <!-- </ion-item>
       </ion-list> -->
 
-      <p class="phaseJesus"><span class="JesusName">Jesus</span> is the way!</p>
+      <p class="phaseJesus">
+        <span class="JesusName">Jesus</span
+        >{{ getTranslated("MENU.JESUS_PHRASE") }}
+      </p>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>
   </ion-split-pane>

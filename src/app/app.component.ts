@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, AfterViewInit } from "@angular/core";
 import { TranslateService } from "@ngx-translate/core";
 import { LanguageService } from "./language.service";
 
@@ -7,7 +7,13 @@ import { LanguageService } from "./language.service";
   templateUrl: "app.component.html",
   styleUrls: ["app.component.scss"],
 })
-export class AppComponent {
+export class AppComponent implements OnInit, AfterViewInit {
+  words: string[] = [];
+  currentWordIndex = 0;
+  isDeleting = false;
+  typingSpeed = 100;
+  text = "";
+
   links: string[] = [];
   appPages = [
     { title: "Home", url: "/home", icon: "home" },
@@ -20,12 +26,20 @@ export class AppComponent {
   ];
   selectedLanguage: string = "gb";
 
-  public labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];
+  // public labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];
   constructor(
     private translate: TranslateService,
     private languageService: LanguageService,
   ) {
     this.initializeApp();
+  }
+  ngOnInit() {
+    this.words = ["Web Developer"];
+  }
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.type();
+    }, 1500);
   }
 
   initializeApp() {
@@ -71,6 +85,66 @@ export class AppComponent {
   }
   getTranslated(key: string): string {
     return this.translate.instant(key);
+  }
+  // type() {
+  //   const currentWord = this.words[this.currentWordIndex];
+  //   const isComplete = !this.isDeleting && this.text === currentWord;
+  //   const isDeletingComplete = this.isDeleting && this.text === "";
+
+  //   if (isComplete) {
+  //     this.isDeleting = true;
+  //     setTimeout(() => {
+  //       this.isDeleting = false;
+  //       this.currentWordIndex = (this.currentWordIndex + 1) % this.words.length;
+  //       setTimeout(() => {
+  //         this.type();
+  //       }, 500);
+  //     }, 1500);
+  //   } else if (isDeletingComplete) {
+  //     this.text = "";
+  //     setTimeout(() => {
+  //       this.type();
+  //     }, 500);
+  //   } else if (this.isDeleting) {
+  //     this.text = currentWord.slice(0, this.text.length - 1);
+  //     setTimeout(() => {
+  //       this.type();
+  //     }, 100);
+  //   } else {
+  //     this.text = currentWord.slice(0, this.text.length + 1);
+  //     setTimeout(() => {
+  //       this.type();
+  //     }, 200);
+  //   }
+  // }
+
+  type() {
+    const currentWord = this.words[this.currentWordIndex];
+    const totalChars = currentWord.length;
+
+    if (!this.text || this.text.length === totalChars) {
+      this.isDeleting = true;
+    }
+
+    if (this.isDeleting && this.text.length === 0) {
+      this.isDeleting = false;
+      this.currentWordIndex = (this.currentWordIndex + 1) % this.words.length;
+    }
+
+    this.text = this.isDeleting
+      ? currentWord.slice(0, this.text.length - 1)
+      : currentWord.slice(0, this.text.length + 1);
+
+    const timeout = this.isDeleting ? 0 : 350;
+
+    setTimeout(() => {
+      this.type();
+    }, timeout);
+
+    if (this.text.length === 13) {
+      this.text = "";
+      console.log(this.text.length);
+    }
   }
 }
 
