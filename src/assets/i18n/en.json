@@ -4,9 +4,25 @@
         "JESUS_PHRASE": "is the way!"
     },
     "HOME": {
-        "PAGE_TITLE": "HOME", 
+        "PAGE_TITLE": "HOME",
         "TITLE": "HI, I'M A FREELANCER",
         "SUBTITLE": "Operating out of São José dos Campos, SP - BR",
         "BUTTON_LABEL": "View My Works"
-    }
+    },
+    "ABOUT_ME": {
+      "PAGE_TITLE": "Know Me More",
+      "SOLUTATION": "Hi, I'm",
+      "FIRST_PARAGRAPH": "I currently work as a systems information programmer and have skills in web development, creating landing pages, web pages, and websites, consuming APIs, and generating all kinds of reports for educational systems.",
+      "SECUND_PARAGRAPH": "I have skills in HTML, CSS, JavaScript, React.js, as well as tools like Visual Studio Code, Grape.js, Github, among others. I have basic knowledge in technologies such as TypeScript, MySQL, MongoDB, package management with NPM, Python, PHP, Cloud Computing AWS, NGINX, PM2, and others for backend usage. I have previous experience as an intern at the Court of Auditors (TCU), where I helped develop and maintain Oracle Express web applications with the Apex framework.",
+      "THIRD_PARAGRAPH": "Certifications in Web Development with PHP, WordPress, Bootstrap 5, JavaScript, HTML5, and CSS3, Essential Programming Logic, Advanced Systems Architecture.",
+      "FOURTH_PARAGRAPH": "I am always seeking opportunities to enhance my skills and expand my experience in web development and/or front-end. I am open to new challenges and opportunities.",
+      "FIVETH_PARAGRAPH": "I have over 20 years of work experience, having worked in other areas such as retail and transportation.",
+      "YEARS": "Years of",
+      "EXPERIENCE": "Experiance",
+      "NAME":"Name:",
+      "EMAIL":"Email:",
+      "DATE_OF_BIRTH":"Date of birth:",
+      "DATE":"07 May, 1984",
+      "FROM":"From:"
+  }
 }

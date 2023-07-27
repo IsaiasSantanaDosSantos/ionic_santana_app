@@ -8,5 +8,21 @@
       "TITLE": "OLÁ, SOU FREELANCER",
       "SUBTITLE": "Operando em São José dos Campos, SP - BR",
       "BUTTON_LABEL": "Ver Meus Trabalhos"
-  }
+  },
+  "ABOUT_ME": {
+    "PAGE_TITLE": "Conheça me mais",
+    "SOLUTATION": "Olá, sou",
+    "FIRST_PARAGRAPH": "Atualmente trabalho como programador de sistemas de informação e possuo habilidades em desenvolvimento web, criando landing pages, páginas e websites, consumindo APIs e criando todo tipo de relatórios para sistemas educacionais.",
+    "SECUND_PARAGRAPH": "Tenho habilidades em HTML, CSS, JavaScript, React.js, além de ferramentas como Visual Studio Code, Grape.js, Github, entre outras. Possuo conhecimento básico em tecnologias como TypeScript, MySQL, MongoDB, gerenciamento de pacotes NPM, Python, PHP, Cloud Computing AWS, NGINX, PM2 e outras para uso no backend. Tenho experiência anterior como estagiário no Tribunal de Contas da União (TCU), onde ajudei a desenvolver e manter aplicações web Oracle Express com o framework Apex.",
+    "THIRD_PARAGRAPH": "Certificados em Desenvolvimento Web em PHP, WordPress Bootstrap 5, JavaScript, HTML5 e CSS3, Lógica de Programação Essencial, Arquitetura de Sistemas Avançados.",
+    "FOURTH_PARAGRAPH": "Estou sempre em busca de oportunidades para aprimorar minhas habilidades e ampliar minha experiência na área de desenvolvimento web e/ou front-end, e estou aberto a novos desafios e oportunidades.",
+    "FIVETH_PARAGRAPH": "Tenho mais de 20 anos de experiência no mercado de trabalho, tendo passado por outras áreas como varejo e transporte.",
+    "YEARS": "Anos de",
+    "EXPERIENCE": "Experiência",
+    "NAME":"Nome:",
+    "EMAIL":"E-mai:",
+    "DATE_OF_BIRTH":"Data de nasc.:",
+    "DATE":"07 de maio, 1984",
+    "FROM":"De:"
+}
 }

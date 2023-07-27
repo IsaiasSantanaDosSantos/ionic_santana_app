@@ -143,7 +143,6 @@ export class AppComponent implements OnInit, AfterViewInit {
 
     if (this.text.length === 13) {
       this.text = "";
-      console.log(this.text.length);
     }
   }
 }
