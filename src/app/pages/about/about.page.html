@@ -1,10 +1,86 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-menu-button slot="start"></ion-menu-button>
-    <ion-title>About</ion-title>
+    <ion-title>About Me</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <h1 class="subTitle fade-up">
+          {{ getTranslated('ABOUT_ME.PAGE_TITLE') }}
+        </h1>
+        <div class="about-content">
+          <div class="about-texts fade-up">
+            <p class="main-text">
+              {{ getTranslated('ABOUT_ME.SOLUTATION') }}
+              <span class="my-name">Isaias Santana</span>
+            </p>
+            <p class="normal-text">
+              {{ getTranslated('ABOUT_ME.FIRST_PARAGRAPH') }}
+            </p>
+            <p class="normal-text">
+              {{ getTranslated('ABOUT_ME.SECUND_PARAGRAPH') }}
+            </p>
+            <p class="normal-text">
+              {{ getTranslated('ABOUT_ME.THIRD_PARAGRAPH') }}
+            </p>
+            <p class="normal-text">
+              {{ getTranslated('ABOUT_ME.FOURTH_PARAGRAPH') }}
+            </p>
+            <p class="normal-text">
+              {{ getTranslated('ABOUT_ME.FIVETH_PARAGRAPH') }}
+            </p>
+          </div>
+          <div class="about-experience fade-up">
+            <p class="experience-number">
+              <span class="zoom">20</span
+              ><span class="experience-circle"></span>
+            </p>
+            <p class="experience-text">
+              {{ getTranslated('ABOUT_ME.YEARS') }}
+              <span>{{ getTranslated('ABOUT_ME.EXPERIENCE') }}</span>
+            </p>
+            <div class="imgBox">
+              <ion-img
+                src="/assets/img/isaias-black_t-shirt.jpg"
+                alt="Isaias' photo"
+                class="myPhoto"
+              ></ion-img>
+            </div>
+          </div>
+        </div>
+        <div class="about-contact fade-up">
+          <p>
+            {{ getTranslated('ABOUT_ME.NAME') }}<br /><span class="contact-info"
+              >Isaias Santana dos Santos</span
+            >
+          </p>
+          <p>
+            {{ getTranslated('ABOUT_ME.EMAIL') }}<br /><span
+              class="contact-info"
+              ><a href="malito:santanawebdev@gmail.com"
+                >santanawebdev@gmail.com</a
+              ></span
+            >
+          </p>
+          <p>
+            {{ getTranslated('ABOUT_ME.DATE_OF_BIRTH') }}<br /><span
+              class="contact-info"
+              >{{ getTranslated('ABOUT_ME.DATE') }}</span
+            >
+          </p>
+          <p>
+            {{ getTranslated('ABOUT_ME.FROM') }}<br /><span class="contact-info"
+              ><a class="loacation" href="https://goo.gl/maps/9HeL7UpRSsWs5FU38"
+                >São José dos Campos, SP - BR</a
+              ></span
+            >
+          </p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
