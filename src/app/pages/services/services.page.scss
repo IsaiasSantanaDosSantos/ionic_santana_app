@@ -1,0 +1,68 @@
+.subTitle {
+  text-align: center;
+  margin: 20px auto 40px;
+  width: 90%;
+}
+.services-cards-box * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.services-cards-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 30px;
+  column-gap: 20px;
+}
+.services-cards {
+  max-width: 150px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ion-icon {
+  font-size: 35px;
+  color: var(--secundaryColor);
+  padding: 6px !important;
+  border-radius: 50%;
+  border: 1px solid var(--secundaryColor);
+  margin-bottom: 10px !important;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    transparent,
+    var(--primaryColor),
+    var(--primaryColor),
+    var(--primaryColor),
+    var(--primaryColor),
+    var(--primaryColor),
+    var(--primaryColor),
+    transparent,
+    transparent
+  );
+  background-size: 330% auto;
+  animation: backgroundAnimation 12s infinite;
+}
+@keyframes backgroundAnimation {
+  100% {
+    background-position: -100%;
+  }
+  0% {
+    background-position: 200%;
+}
+}
+.services-cards-title {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size:16px
+}
+.services-cards-text {
+  font-size: 14px;
+  text-align: center;
+}
