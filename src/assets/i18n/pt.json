@@ -24,5 +24,21 @@
     "DATE_OF_BIRTH":"Data de nasc.:",
     "DATE":"07 de maio, 1984",
     "FROM":"De:"
-}
+  },
+  "SERVICES": {
+    "SERVICES_TITLE_HEADER": "Serviços",
+    "SERVICES_TITLE_PAGE": "Como posso ajudar seu próximo projeto",
+    "SERVICES_TITLE_CARD_ONE": "Desenvolvedor web",
+    "SERVICES_TEXT_CARD_ONE": "Crio a interface visual e interativa de sites/aplicativos web. Utilizo HTML, CSS e JavaScript para visuais, estilos e interatividade, visando uma experiência atrativa, intuitiva e responsiva.",
+    "SERVICES_TITLE_CARD_TWO": "Desenvolvedor de UI/UX",
+    "SERVICES_TEXT_CARD_TWO": "Implemente designs com código funcional usando HTML, CSS e JavaScript. Crie elementos interativos para uma experiência de usuário intuitiva. Colaboro com designers para fidelidade de design e otimização de interface.",
+    "SERVICES_TITLE_CARD_THREE": "Responsiva",
+    "SERVICES_TEXT_CARD_THREE": "Meu objetivo é fornecer uma experiência consistente e amigável em todos os dispositivos. Isso inclui analisar os requisitos, criar layouts responsivos, codificar em HTML e CSS, testar em vários dispositivos e otimizar o desempenho. Esforço-me constantemente para melhorar a qualidade do projeto.",
+    "SERVICES_TITLE_CARD_FOUR": "Navegabilidade",
+    "SERVICES_TEXT_CARD_FOUR": "Criar uma navegação intuitiva e fácil de usar para os usuários, permitindo que eles encontrem facilmente o conteúdo que desejam.",
+    "SERVICES_TITLE_CARD_FIVE": "Otimização de performance",
+    "SERVICES_TEXT_CARD_FIVE": "Implemente práticas e técnicas para melhorar o desempenho do site, como carregamento rápido, redução de tamanho de arquivo e otimização de imagem.",
+    "SERVICES_TITLE_CARD_SIX": "Acessibilidade",
+    "SERVICES_TEXT_CARD_SIX": "Garantir a acessibilidade do site para todos os usuários, incluindo aqueles com deficiência. Siga as diretrizes para descrições de imagens, navegação pelo teclado e contraste para promover a inclusão."
+  }
 }

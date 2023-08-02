@@ -1,70 +1,66 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-menu-button slot="start"></ion-menu-button>
-    <ion-title>Services</ion-title>
+    <ion-title>{{ getTranslated('SERVICES.SERVICES_TITLE_HEADER') }}</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <h1 class="subTitle fade-up">How I can help your next project</h1>
+  <h1 class="subTitle fade-up">
+    {{ getTranslated('SERVICES.SERVICES_TITLE_PAGE') }}
+  </h1>
   <div class="services-cards-box">
     <div class="services-cards fade-up">
       <ion-icon name="desktop" class="services-icons"></ion-icon>
-      <p class="services-cards-title">Web developer</p>
+      <p class="services-cards-title">
+        {{ getTranslated('SERVICES.SERVICES_TITLE_CARD_ONE') }}
+      </p>
       <p class="services-cards-text">
-        I create the visual and interactive interface of websites/web
-        applications. I use HTML, CSS and JavaScript for visuals, styles and
-        interactivity, aiming for an attractive, intuitive and responsive
-        experience
+        {{ getTranslated('SERVICES.SERVICES_TEXT_CARD_ONE') }}
       </p>
     </div>
     <div class="services-cards fade-up">
       <ion-icon name="brush" class="services-icons"></ion-icon>
-      <p class="services-cards-title">UI/UX Developer</p>
+      <p class="services-cards-title">
+        {{ getTranslated('SERVICES.SERVICES_TITLE_CARD_TWO') }}
+      </p>
       <p class="services-cards-text">
-        Implement designs with working code using HTML, CSS and JavaScript.
-        Create interactive elements for an intuitive user experience. I
-        collaborate with designers for design fidelity and interface
-        optimization.
+        {{ getTranslated('SERVICES.SERVICES_TEXT_CARD_TWO') }}
       </p>
     </div>
     <div class="services-cards fade-up">
       <ion-icon name="phone-portrait" class="services-icons"></ion-icon>
-      <p class="services-cards-title">Responsive</p>
+      <p class="services-cards-title">
+        {{ getTranslated('SERVICES.SERVICES_TITLE_CARD_THREE') }}
+      </p>
       <p class="services-cards-text">
-        My goal is to provide a consistent and user-friendly experience across
-        all devices. This includes analyzing the requirements, creating
-        responsive layouts, coding in HTML and CSS, testing on various devices,
-        and optimizing performance. I constantly strive to enhance the project's
-        quality.
+        {{ getTranslated('SERVICES.SERVICES_TEXT_CARD_THREE') }}
       </p>
     </div>
     <div class="services-cards fade-up">
       <ion-icon name="compass" class="services-icons"></ion-icon>
-      <p class="services-cards-title">Navigability</p>
+      <p class="services-cards-title">
+        {{ getTranslated('SERVICES.SERVICES_TITLE_CARD_FOUR') }}
+      </p>
       <p class="services-cards-text">
-        Create an intuitive, easy-to-use navigation for users, allowing them to
-        easily find the content they want.
+        {{ getTranslated('SERVICES.SERVICES_TEXT_CARD_FOUR') }}
       </p>
     </div>
     <div class="services-cards fade-up">
       <ion-icon name="rocket" class="services-icons"></ion-icon>
       <p class="services-cards-title">
-        Performance <br />
-        Optimization
+        {{ getTranslated('SERVICES.SERVICES_TITLE_CARD_FIVE') }}
       </p>
       <p class="services-cards-text">
-        Implement practices and techniques to improve website performance, such
-        as fast loading, file size reduction, and image optimization.
+        {{ getTranslated('SERVICES.SERVICES_TEXT_CARD_FIVE') }}
       </p>
     </div>
     <div class="services-cards fade-up">
       <ion-icon name="accessibility" class="services-icons"></ion-icon>
-      <p class="services-cards-title">Accessibility</p>
+      <p class="services-cards-title">
+        {{ getTranslated('SERVICES.SERVICES_TITLE_CARD_SIX') }}
+      </p>
       <p class="services-cards-text">
-        Ensure website accessibility for all users, including those with
-        disabilities. Follow guidelines for image descriptions, keyboard
-        navigation, and contrast to promote inclusivity.
+        {{ getTranslated('SERVICES.SERVICES_TEXT_CARD_SIX') }}
       </p>
     </div>
   </div>

@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
-  selector: 'app-services',
-  templateUrl: './services.page.html',
-  styleUrls: ['./services.page.scss'],
+  selector: "app-services",
+  templateUrl: "./services.page.html",
+  styleUrls: ["./services.page.scss"],
 })
 export class ServicesPage implements OnInit {
+  constructor(private translate: TranslateService) {}
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit() {}
+  getTranslated(key: string): string {
+    return this.translate.instant(key);
   }
-
 }
