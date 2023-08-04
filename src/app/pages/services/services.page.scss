@@ -1,7 +1,10 @@
 .subTitle {
   text-align: center;
-  margin: 20px auto 40px;
-  width: 90%;
+    margin: 15px auto 30px;
+    max-width: 400px;
+    width: 90%;
+    background-color: var(--primaryColor);
+    padding: 5px 10px;
 }
 .services-cards-box * {
   margin: 0;
@@ -32,29 +35,7 @@ ion-icon {
   border-radius: 50%;
   border: 1px solid var(--secundaryColor);
   margin-bottom: 10px !important;
-  background-image: linear-gradient(
-    to right,
-    transparent,
-    transparent,
-    var(--primaryColor),
-    var(--primaryColor),
-    var(--primaryColor),
-    var(--primaryColor),
-    var(--primaryColor),
-    var(--primaryColor),
-    transparent,
-    transparent
-  );
-  background-size: 330% auto;
-  animation: backgroundAnimation 12s infinite;
-}
-@keyframes backgroundAnimation {
-  100% {
-    background-position: -100%;
-  }
-  0% {
-    background-position: 200%;
-}
+  background-color: var(--primaryColor);
 }
 .services-cards-title {
   font-weight: 700;

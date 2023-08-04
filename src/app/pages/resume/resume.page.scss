@@ -1,0 +1,191 @@
+
+.subTitle {
+  text-align: center;
+    margin: 15px auto 30px;
+    max-width: 365px;
+    width: 100%;
+    background-color: var(--primaryColor);
+    padding: 5px 10px;
+    font-family: var(--defaultFont);
+}
+
+.schoolAndExperence
+{
+  font-family: var(--defaultFont);
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 30px;
+}
+.resume-columnOne, .resume-columnTwo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  position: relative;
+}
+.resume-columnTitle {
+  font-size: 20px;
+  margin: 0 auto 10px 0;
+  font-weight: 600;
+}
+.columnOneBar {
+  position: absolute;
+  top: 46px;
+  left: 0;
+  width: 3px;
+  height: 95%;
+  background-color: var(--primaryColor);
+  border-radius: 5px;
+}
+.resume-columnItems{
+  width: 95%;
+  font-size: 17px;
+  margin: 0 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.columnItemTitles {
+  margin: 0 auto 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.column-institute {
+  margin: 0 auto 10px 0;
+  font-size: 16px;
+}
+.column-description {
+  font-size: 15px;
+  font-weight: 200;
+  margin: 0 0 15px 0;
+  width: 100%;
+}
+.resumeSkills {
+  width: 90%;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  font-family: var(--defaultFont);
+}
+.skillTitle {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: start;
+  margin: 30px auto 15px 0 ;
+}
+.skillBox {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 20px;
+}
+.skillItems {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.skillItemsHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skillName, .skillPorcentage {
+  margin: 0 0 10px 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+.skillBar {
+  width: 100%;
+  height: 10px;
+  position: relative;
+  background-color: var(--darkGrayColor);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+}
+.skillBar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--primaryColor);
+  z-index: 2;
+}
+.skillOneBar span  {
+  width: 70%;
+}
+.skillTwoBar span  {
+  width: 85%;
+}
+.skillThreeBar span  {
+  width: 70%;
+}
+.skillFourBar span  {
+  width: 90%;
+}
+.skillFiveBar span  {
+  width: 90%;
+}
+.skillSixBar span  {
+  width: 80%;
+}
+.skillSevenBar span  {
+  width: 60%;
+}
+.skillEightBar span  {
+  width: 90%;
+}
+.skillNineBar span  {
+  width: 50%;
+}
+.skillTenBar span  {
+  width: 60%;
+}
+.skillElevenBar span  {
+  width: 50%;
+}
+.skillTwelveBar span  {
+  width: 70%;
+}
+.downloadBtnBox {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.downloadBtnBox {
+  margin: 0 auto 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+.downloadResume {
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid var(--blackColor);
+  padding: 5px 15px;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+.downloadResume:hover {
+color: var(--whiteColor);
+background-color: var(--blackColor);
+}
