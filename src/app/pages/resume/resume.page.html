@@ -1,11 +1,255 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-menu-button slot="start"></ion-menu-button>
-    <ion-title>Resume</ion-title>
+    <ion-title>{{ getTranslated('RESUME.TITLE_HEADER') }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <h1 class="subTitle fade-up">
+          {{ getTranslated('RESUME.TITLE_PAGE') }}
+        </h1>
+      </ion-col>
+    </ion-row>
 
+    <ion-row class="schoolAndExperence">
+      <div class="resume-columnOne">
+        <div class="columnOneBar fade-up"></div>
+
+        <p class="resume-columnTitle fade-up">
+          {{ getTranslated('RESUME.EDUCATION_TITLE') }}
+        </p>
+
+        <div class="resume-columnItems fade-up">
+          <p class="columnItemTitles">
+            {{ getTranslated('RESUME.FIRST_EDUCATION') }}
+          </p>
+          <p class="column-institute">
+            {{ getTranslated('RESUME.MANE_FIRST_SCHOOL') }}
+          </p>
+          <p class="column-description">
+            {{ getTranslated('RESUME.INFO_FIRST_SCHOOL') }}
+          </p>
+        </div>
+
+        <div class="resume-columnItems fade-up">
+          <p class="columnItemTitles">
+            {{ getTranslated('RESUME.SECUND_EDUCATION') }}
+          </p>
+          <p class="column-institute">
+            {{ getTranslated('RESUME.MANE_SECUND_SCHOOL') }}
+          </p>
+          <p class="column-description">
+            {{ getTranslated('RESUME.INFO_SECUND_SCHOOL') }}
+          </p>
+        </div>
+
+        <div class="resume-columnItems fade-up">
+          <p class="columnItemTitles">
+            {{ getTranslated('RESUME.THREE_EDUCATION') }}
+          </p>
+          <p class="column-institute">
+            {{ getTranslated('RESUME.MANE_THREE_SCHOOL') }}
+          </p>
+          <p class="column-description">
+            {{ getTranslated('RESUME.INFO_THREE_SCHOOL') }}
+          </p>
+        </div>
+
+        <div class="resume-columnItems fade-up">
+          <p class="columnItemTitles">
+            {{ getTranslated('RESUME.FOUR_EDUCATION') }}
+          </p>
+          <p class="column-institute">
+            {{ getTranslated('RESUME.MANE_FOUR_SCHOOL') }}
+          </p>
+          <p class="column-description">
+            {{ getTranslated('RESUME.INFO_FOUR_SCHOOL') }}
+          </p>
+        </div>
+      </div>
+
+      <div class="resume-columnTwo">
+        <div class="columnOneBar fade-up"></div>
+
+        <p class="resume-columnTitle fade-up">
+          {{ getTranslated('RESUME.EXPERIENCE_TITLE') }}
+        </p>
+
+        <div class="resume-columnItems fade-up">
+          <p class="columnItemTitles">
+            {{ getTranslated('RESUME.FIRST_EXPERIENCE') }}
+          </p>
+          <p class="column-institute">
+            {{ getTranslated('RESUME.FIRST_INSTITUTION') }}
+          </p>
+          <p class="column-description">
+            {{ getTranslated('RESUME.FIRST_DESCRIPTION') }}
+          </p>
+        </div>
+
+        <div class="resume-columnItems fade-up">
+          <p class="columnItemTitles">
+            {{ getTranslated('RESUME.SECUND_EXPERIENCE') }}
+          </p>
+          <p class="column-institute">
+            {{ getTranslated('RESUME.SECUND_INSTITUTION') }}
+          </p>
+          <p class="column-description">
+            {{ getTranslated('RESUME.SECUND_DESCRIPTION') }}
+          </p>
+        </div>
+
+        <div class="resume-columnItems fade-up">
+          <p class="columnItemTitles">
+            {{ getTranslated('RESUME.THREE_EXPERIENCE') }}
+          </p>
+          <p class="column-institute">
+            {{ getTranslated('RESUME.THREE_INSTITUTION') }}
+          </p>
+          <p class="column-description">
+            {{ getTranslated('RESUME.THREE_DESCRIPTION') }}
+          </p>
+        </div>
+      </div>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <div class="resumeSkills">
+          <p class="skillTitle fade-up">
+            {{ getTranslated('RESUME.SKILL_TITLE') }}
+          </p>
+
+          <div class="skillBox">
+            <div class="skillItems fade-up">
+              <div class="skillItemsHeader">
+                <p class="skillName">
+                  {{ getTranslated('RESUME.FIRST_SKILL_NAME') }}
+                </p>
+                <p class="skillPorcentage">70%</p>
+              </div>
+              <div class="skillOneBar skillBar"><span></span></div>
+            </div>
+
+            <div class="skillItems fade-up">
+              <div class="skillItemsHeader">
+                <p class="skillName">Javascript</p>
+                <p class="skillPorcentage">85%</p>
+              </div>
+              <div class="skillTwoBar skillBar"><span></span></div>
+            </div>
+
+            <div class="skillItems fade-up">
+              <div class="skillItemsHeader">
+                <p class="skillName">React.js</p>
+                <p class="skillPorcentage">70%</p>
+              </div>
+              <div class="skillThreeBar skillBar"><span></span></div>
+            </div>
+
+            <div class="skillItems fade-up">
+              <div class="skillItemsHeader">
+                <p class="skillName">HTML 5</p>
+                <p class="skillPorcentage">90%</p>
+              </div>
+              <div class="skillFourBar skillBar"><span></span></div>
+            </div>
+
+            <div class="skillItems fade-up">
+              <div class="skillItemsHeader">
+                <p class="skillName">CSS 3</p>
+                <p class="skillPorcentage">90%</p>
+              </div>
+              <div class="skillFiveBar skillBar"><span></span></div>
+            </div>
+
+            <div class="skillItems fade-up">
+              <div class="skillItemsHeader">
+                <p class="skillName">Styled-component</p>
+                <p class="skillPorcentage">80%</p>
+              </div>
+              <div class="skillSixBar skillBar"><span></span></div>
+            </div>
+
+            <div class="skillItems fade-up">
+              <div class="skillItemsHeader">
+                <p class="skillName">Bootstrap</p>
+                <p class="skillPorcentage">60%</p>
+              </div>
+              <div class="skillSevenBar skillBar"><span></span></div>
+            </div>
+
+            <div class="skillItems fade-up">
+              <div class="skillItemsHeader">
+                <p class="skillName">Grape.js</p>
+                <p class="skillPorcentage">90%</p>
+              </div>
+              <div class="skillEightBar skillBar"><span></span></div>
+            </div>
+
+            <div class="skillItems fade-up">
+              <div class="skillItemsHeader">
+                <p class="skillName">WordPress</p>
+                <p class="skillPorcentage">50%</p>
+              </div>
+              <div class="skillNineBar skillBar"><span></span></div>
+            </div>
+
+            <div class="skillItems fade-up">
+              <div class="skillItemsHeader">
+                <p class="skillName">Figma</p>
+                <p class="skillPorcentage">60%</p>
+              </div>
+              <div class="skillTenBar skillBar"><span></span></div>
+            </div>
+
+            <div class="skillItems fade-up">
+              <div class="skillItemsHeader">
+                <p class="skillName">MySql</p>
+                <p class="skillPorcentage">50%</p>
+              </div>
+              <div class="skillElevenBar skillBar"><span></span></div>
+            </div>
+
+            <div class="skillItems fade-up">
+              <div class="skillItemsHeader">
+                <p class="skillName">GitHub</p>
+                <p class="skillPorcentage">70%</p>
+              </div>
+              <div class="skillTwelveBar skillBar"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <div class="downloadBtnBox">
+        <div class="cvBox fade-up">
+          <a
+            href="https://drive.google.com/file/d/1viTsJS6Ls5pSv2UkPGVR-gi6K3meQsSS/view?usp=share_link"
+            download="Isaias-resume"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="downloadResume"
+            >{{ getTranslated('RESUME.RESUME_EN') }}
+          </a>
+        </div>
+        <div class="cvBox fade-up">
+          <a
+            href="https://drive.google.com/file/d/1HTe12NQrRiySvN1xLIbBymMtSR8B56AN/view"
+            download="curriculo-Isaias"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="downloadResume"
+            >{{ getTranslated('RESUME.RESUME_PT') }}
+          </a>
+        </div>
+      </div>
+    </ion-row>
+  </ion-grid>
 </ion-content>
-

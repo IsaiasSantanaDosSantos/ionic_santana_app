@@ -40,5 +40,45 @@
     "SERVICES_TEXT_CARD_FIVE": "Implemente práticas e técnicas para melhorar o desempenho do site, como carregamento rápido, redução de tamanho de arquivo e otimização de imagem.",
     "SERVICES_TITLE_CARD_SIX": "Acessibilidade",
     "SERVICES_TEXT_CARD_SIX": "Garantir a acessibilidade do site para todos os usuários, incluindo aqueles com deficiência. Siga as diretrizes para descrições de imagens, navegação pelo teclado e contraste para promover a inclusão."
+  },
+  "RESUME": {
+    "TITLE_HEADER":"Currículo",
+    "TITLE_PAGE": "Um resumo do meu currículo",
+    "EDUCATION_TITLE": "Minha Educação",
+
+    "FIRST_EDUCATION": "Análise e desenvolvimento de sistemas",
+    "MANE_FIRST_SCHOOL": "Universidade Anhanguera | 07/2020 - 08/2022",
+    "INFO_FIRST_SCHOOL": "Algoritmos e Programação Estruturada | Análise e Modelagem de Sistemas | Arquitetura e Organização de Computadores | Desenvolvimento Móvel | Cultura Digital | Pensamento de Design | Marketing Digital | Mentalidade Ágil | Engenharia de Software | Idiomas | Lógica Computacional | Modelagem de Dados | Programação e Desenvolvimento de Banco de Dados | Programação Web | Segurança e Auditoria de Sistemas | Sistemas operacionais | Sociedade Brasileira e Cidadania.",
+
+    "SECUND_EDUCATION": "Linguagem de Programação Web (PHP)",
+    "MANE_SECUND_SCHOOL": "DRM Educação  | 10/2022 - 11/2022",
+    "INFO_SECUND_SCHOOL": "Compreender o ambiente e a estrutura básica da linguagem PHP | Sintaxe básica do PHP. | Tipos de dados em PHP. | Operadores em PHP.",
+
+    "THREE_EDUCATION": "Webdesign em WordPress",
+    "MANE_THREE_SCHOOL": "DRM Educação | 09/2022 - 10/2022",
+    "INFO_THREE_SCHOOL": "A Web e seus Serviços | WordPress | Exportando um Tema | Adicionando serviços ao site.",
+
+    "FOUR_EDUCATION": "JavaScript",
+    "MANE_FOUR_SCHOOL": "Udemy | 06/2021 - 07/2021",
+    "INFO_FOUR_SCHOOL": "Introdução ao Javascript, O que é Javascript, Sintaxe básica, Variáveis ​​e tipos de dados, Operadores e expressões, Estruturas de controle (Condições, Loops, Switch-case), Funções (Declaração, Parâmetros, Retorno), Arrays (Criação, Manipulação, Acessando elementos) , Objetos (Criação, Propriedades, Métodos), Manipulação de DOM (Interagindo com elementos HTML, Seleção, Manipulação de Conteúdo), Tratamento de Exceções (blocos try-catch, Throwing, Tratamento de Erros), AJAX e Pedidos Assíncronos (Introdução ao AJAX, pedidos HTTP, Manipulação de resposta), Introdução ao ES6 (Let e ​​const, Funções de seta, Literais de modelo), Introdução ao Node.js (Instalação e configuração, Módulos e requisitos, Manipulação de arquivos), Introdução a estruturas e bibliotecas (Exemplos de estruturas populares, Introdução a jQuery, Uso de bibliotecas externas), Melhores Práticas de Desenvolvimento (Organização de Código, Comentários, Depuração).",
+
+    "EXPERIENCE_TITLE": "Minha Experiência",
+
+    "FIRST_EXPERIENCE": "Programador de sistemas de informação",
+    "FIRST_INSTITUTION": "DRM Educação | 05/2022 - Present",
+    "FIRST_DESCRIPTION": "Desenvolvimento de sites responsivos, landing pages e páginas que se adaptam a diferentes tamanhos de tela utilizando HTML, CSS, JavaScript e Visual Studio Code, Instrução aos clientes no uso do framework Grape.js para desenvolvimento e manutenção de páginas, Colaboração com a equipe para priorizar tarefas e cumprir prazos estabelecidos, Criação de relatórios para instituições de ensino, Criação de animações e interações usando JavaScript, Recuperação de dados de APIs e APIs REST, Criação dinâmica de componentes e elementos com base nas informações obtidas de APIs, Validação de formulários usando JavaScript.",
+
+    "SECUND_EXPERIENCE": "Estagiário",
+    "SECUND_INSTITUTION": "Tribunal de Contas da União | 09/2021 - 11/2021",
+    "SECUND_DESCRIPTION": "Colaborar no desenvolvimento de aplicações web utilizando a ferramenta Oracle Express com integração direta da ferramenta com o banco de dados PL/SQL, realizar manutenção e/ou criar novas funcionalidades no site interno da instituição de ensino do TCU, agregar melhorias aos projetos utilizando HTML, CSS e JavaScript quando necessário.",
+
+    "THREE_EXPERIENCE": "Gerente de loja",
+    "THREE_INSTITUTION": "Mercado Terra e Sol Eireli | 05/2019 - 12/2020",
+    "THREE_DESCRIPTION": "Atuar como líder em todos os setores da loja (açougue, padaria, caixas, etc.), Implantação de padronização de processos (POP), Criação de promoções para fidelização de clientes, Atendimento ao cliente identificando suas necessidades, Planejamento para aumento do ticket médio , Preservar a ética nas relações comerciais com fornecedores e parceiros por meio da transparência nas informações e atitudes honestas, Interface com as demais áreas da empresa para estabelecer planos de ação a fim de atender as necessidades dos clientes e definir estratégias para alinhar as demandas comerciais, Acompanhar a evolução das vendas mensais, trimestrais , e faturamento semestral e desenvolvendo formas de mantê-lo crescendo, Realização de reuniões para apresentação de resultados mensais, Implementação de checklists, metas e acompanhamento de resultados.",
+
+    "SKILL_TITLE": "Minhas Habilidades",
+    "FIRST_SKILL_NAME": "Desenvolvedor Web",
+    "RESUME_PT": "Baixar CV (PT)",
+    "RESUME_EN": "Baixar CV (EN)"
   }
 }

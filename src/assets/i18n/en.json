@@ -40,5 +40,45 @@
       "SERVICES_TEXT_CARD_FIVE": "Implement practices and techniques to improve website performance, such as fast loading, file size reduction, and image optimization.",
       "SERVICES_TITLE_CARD_SIX": "Accessibility",
       "SERVICES_TEXT_CARD_SIX": "Ensure website accessibility for all users, including those with disabilities. Follow guidelines for image descriptions, keyboard navigation, and contrast to promote inclusivity."
+    },
+    "RESUME": {
+      "TITLE_HEADER":"Resume",
+      "TITLE_PAGE": "A summary of My Resume",
+      "EDUCATION_TITLE": "My Education",
+
+      "FIRST_EDUCATION": "Systems analysis and development,",
+      "MANE_FIRST_SCHOOL": "Anhanguera University | 07/2020 - 08/2022",
+      "INFO_FIRST_SCHOOL": "Algorithms and Structured Programming | Systems Analysis and Modeling | Computer Architecture and Organization | Mobile Development | Digital Culture | Design Thinking | Digital Marketing | Agile Mindset | Software Engineering | Languages | Computational Logic | Data Modeling | Programming and Database Development | Web Programming | Systems Security and Auditing | Operating Systems | Brazilian Society and Citizenship.",
+
+      "SECUND_EDUCATION": "Web Programming Language (PHP)",
+      "MANE_SECUND_SCHOOL": "DRM Education | 10/2022 - 11/2022",
+      "INFO_SECUND_SCHOOL": "Understand the environment and basic structure of the PHP language| Basic syntax of PHP. | Data types in PHP. | Operators in PHP.",
+
+      "THREE_EDUCATION": "Web Design in WordPress",
+      "MANE_THREE_SCHOOL": "DRM Education | 09/2022 - 10/2022",
+      "INFO_THREE_SCHOOL": "The Web and its Services | WordPress | Exporting a Theme | Adding Services to the Website.",
+
+      "FOUR_EDUCATION": "JavaScript",
+      "MANE_FOUR_SCHOOL": "Udemy | 06/2021 - 07/2021",
+      "INFO_FOUR_SCHOOL": "Introduction to Javascript, What is Javascript, Basic syntax, Variables and Data Types, Operators and Expressions, Control Structures (Conditions, Loops, Switch-case), Functions (Declaration, Parameters, Return), Arrays (Creation, Manipulation, Accessing elements), Objects (Creation, Properties, Methods), DOM Manipulation (Interacting with HTML elements, Selection, Content manipulation), Exception Handling (try-catch blocks, Throwing, Error handling),  AJAX and Asynchronous Requests (Introduction to AJAX, HTTP requests, Response handling), Introduction to ES6 (Let and const, Arrow functions, Template literals), Introduction to Node.js (Installation and configuration, Modules and require, File manipulation), Introduction to frameworks and libraries (Examples of popular frameworks, Introduction to jQuery, Usage of external libraries), Development Best Practices (Code organization, Comments, Debugging)",
+
+      "EXPERIENCE_TITLE": "My Experience",
+
+      "FIRST_EXPERIENCE": "Information systems programmer",
+      "FIRST_INSTITUTION": "DRM Education | 05/2022 - Present",
+      "FIRST_DESCRIPTION": " Development of responsive websites, landing pages, and pages that adapt to different screen sizes using HTML, CSS,  JavaScript, and Visual Studio Code, Instruction to clients in the use of the Grape.js framework for page development and maintenance, Collaboration with the team to prioritize tasks and meet established deadlines, Creation of reports for educational institutions, Creation of animations and  interactions using JavaScript, Retrieval of data from APIs  and REST APIs, Dynamic creation of components and elements  based on information obtained from APIs, Form validation using JavaScript.",
+
+      "SECUND_EXPERIENCE": "Intern",
+      "SECUND_INSTITUTION": "Federal Court of Accounts | 09/2021 - 11/2021",
+      "SECUND_DESCRIPTION": "Collaborating in the development of web applications using the Oracle Express tool with direct integration of the tool with the PL/SQL database, performed maintenance and/or created new functionalities on the internal website of the TCU educational institution, added enhancements to projects using HTML, CSS, and JavaScript when necessary.",
+
+      "THREE_EXPERIENCE": "Store Manager",
+      "THREE_INSTITUTION": "Terra e Sol Eireli Market | 05/2019 - 12/2020",
+      "THREE_DESCRIPTION": " Acting as a leader in all sectors of the store (butchery, bakery, cashiers, etc.), Implementation of process standardization (POP), Creating promotions to build customer loyalty, Providing customer service by identifying their needs, Planning to increase the average ticket, Preserving ethics in commercial relations with suppliers and partners through transparency in information and honest attitudes, Interfacing with other areas of the company to establish action plans in order to meet customer needs and define strategies to align commercial demands, Monitoring the evolution of monthly, quarterly, and semi-annual billing and developing ways to keep it growing, Conducting meetings to present monthly results, Implementing checklists, targets, and result tracking.",
+
+      "SKILL_TITLE": "My Skills",
+      "FIRST_SKILL_NAME": "Web developer",
+      "RESUME_PT": "Download CV (PT)",
+      "RESUME_EN": "Download CV (EN)"
     }
 }
