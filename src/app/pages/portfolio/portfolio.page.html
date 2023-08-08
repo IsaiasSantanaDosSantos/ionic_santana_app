@@ -6,6 +6,27 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <div id="portfolio">
+    <h1 class="homeTitle">Some of my most recent projects</h1>
+    <ion-card *ngFor="let project of projects; let i = index" class="fade-up">
+      <ion-card-header>
+        <ion-card-title class="title">{{ project.title }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-img [src]="project.background" class="project-image"></ion-img>
+        <ion-button (click)="handleDetailsClick(project, i)"
+          >Ver projeto</ion-button
+        >
+      </ion-card-content>
+    </ion-card>
+  </div>
 
+  <ion-modal *ngIf="showDetails">
+    <app-portfolio-details
+      [project]="selectedProject"
+      [index]="selectedIndex"
+      (closeDetails)="closeDetails()"
+    >
+    </app-portfolio-details>
+  </ion-modal>
 </ion-content>
-

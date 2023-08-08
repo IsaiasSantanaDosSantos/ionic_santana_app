@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Projeto 1",
+    "background": "../../assets/img/background-1.jpg",
+    "description": "Descrição do Projeto 1"
+  },
+  {
+    "title": "Projeto 2",
+    "background": "../../assets/img/background-2.jpg",
+    "description": "Descrição do Projeto 2"
+  },
+  {
+    "title": "Projeto 3",
+    "background": "../../assets/img/background-3.jpg",
+    "description": "Descrição do Projeto 3"
+  }
+]
