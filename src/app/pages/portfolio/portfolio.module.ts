@@ -1,20 +1,21 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
 
-import { IonicModule } from '@ionic/angular';
+import { IonicModule } from "@ionic/angular";
 
-import { PortfolioPageRoutingModule } from './portfolio-routing.module';
+import { PortfolioComponentRoutingModule } from "./portfolio-routing.module";
 
-import { PortfolioPage } from './portfolio.page';
+import { PortfolioComponent } from "./portfolio.page";
+import { PortfolioDetailsComponent } from "../../portfolio-details/portfolio-details.component";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PortfolioPageRoutingModule
+    PortfolioComponentRoutingModule,
   ],
-  declarations: [PortfolioPage]
+  declarations: [PortfolioComponent, PortfolioDetailsComponent],
 })
 export class PortfolioPageModule {}
