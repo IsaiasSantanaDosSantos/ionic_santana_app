@@ -9,3 +9,28 @@
 .title {
  text-align: center;
 }
+.project-card {
+  box-shadow: 0 0 41px -16px var(--transpDarkColor);
+  margin-bottom: 30px;
+}
+ion-card-header+.card-content-md {
+  text-align: center;
+}
+.details-btn {
+  background-color: var(--primaryColor);
+  margin: 15px auto;
+}
+.project-image {
+  transition: all 0.4s;
+  border: 1px solid var(--transpDarkColor);
+ cursor: pointer;
+}
+.project-image:hover {
+  transform: scale(1.02);
+}
+ion-button {
+  color: var(--primaryColor);
+}
+.hydrated {
+  border-radius: 0 !important;
+}

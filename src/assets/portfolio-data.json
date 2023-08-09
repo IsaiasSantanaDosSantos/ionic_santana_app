@@ -1,17 +1,37 @@
 [
   {
-    "title": "Projeto 1",
-    "background": "../../assets/img/background-1.jpg",
+    "title": "Portfolio",
+    "background": "../../assets/img/portfolio-image.jpg",
     "description": "Descrição do Projeto 1"
   },
   {
-    "title": "Projeto 2",
-    "background": "../../assets/img/background-2.jpg",
+    "title": "Portfolio app",
+    "background": "../../assets/img/app-image.jpg",
     "description": "Descrição do Projeto 2"
   },
   {
-    "title": "Projeto 3",
-    "background": "../../assets/img/background-3.jpg",
+    "title": "API Rest",
+    "background": "../../assets/img/API_Rest-imagem.jpg",
+    "description": "Descrição do Projeto 3"
+  },
+  {
+    "title": "API Consumer",
+    "background": "../../assets/img/API_consumer-image.jpg",
+    "description": "Descrição do Projeto 3"
+  },
+  {
+    "title": "GolPag",
+    "background": "../../assets/img/golPag-image.jpg",
+    "description": "Descrição do Projeto 3"
+  },
+  {
+    "title": "Classic template",
+    "background": "../../assets/img/template-classic.jpg",
+    "description": "Descrição do Projeto 3"
+  },
+  {
+    "title": "Ocean template",
+    "background": "../../assets/img/template-ocean.jpg",
     "description": "Descrição do Projeto 3"
   }
 ]
