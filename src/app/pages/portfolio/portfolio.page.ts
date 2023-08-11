@@ -16,7 +16,7 @@
 
 import { Component, OnInit } from "@angular/core";
 import { PortfolioService } from "../../portfolio.service";
-import { PortfolioDetailsComponent } from "../../portfolio-details/portfolio-details.component";
+// import { PortfolioDetailsComponent } from "../../portfolio-details/portfolio-details.component";
 
 @Component({
   selector: "app-portfolio",
@@ -42,6 +42,8 @@ export class PortfolioComponent implements OnInit {
     this.selectedProject = project;
     this.selectedIndex = index;
     this.showDetails = true;
+    console.log(this.showDetails);
+    console.log();
   }
 
   closeDetails(): void {

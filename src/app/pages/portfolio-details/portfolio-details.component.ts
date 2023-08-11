@@ -11,5 +11,11 @@ export class PortfolioDetailsComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log("Project details received:", this.project);
+    console.log(this.project.title);
+    console.log(this.project.background);
+    console.log(this.project.description);
+    console.log("Index received:", this.index);
+  }
 }
