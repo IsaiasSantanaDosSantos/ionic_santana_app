@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="project-content">
   <ion-card>
     <ion-card-content>
       <h3>Description:</h3>
@@ -17,8 +17,8 @@
 
   <ion-card>
     <ion-card-content>
-      <h3>Technologies Used:</h3>
-      <p>{{ project.technologies }}</p>
+      <h3>Background Image:</h3>
+      <ion-img [src]="project.background" class="project-image"></ion-img>
     </ion-card-content>
   </ion-card>
 </ion-content>

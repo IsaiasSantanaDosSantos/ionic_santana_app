@@ -24,12 +24,21 @@
     </ion-card>
   </div>
 
-  <ion-modal *ngIf="showDetails">
+  <!-- <ion-modal *ngIf="showDetails" class="details-modal">
     <app-portfolio-details
       [project]="selectedProject"
       [index]="selectedIndex"
       (closeDetails)="closeDetails()"
     >
     </app-portfolio-details>
-  </ion-modal>
+
+  </ion-modal>-->
+  <div *ngIf="showDetails" class="testando">
+    <app-portfolio-details
+      [project]="selectedProject"
+      [index]="selectedIndex"
+      (closeDetails)="closeDetails()"
+    >
+    </app-portfolio-details>
+  </div>
 </ion-content>
