@@ -17,28 +17,38 @@
       </ion-card-header>
       <ion-card-content>
         <ion-img [src]="project.background" class="project-image"></ion-img>
-        <ion-button (click)="handleDetailsClick(project, i)" class="details-btn"
+        <ion-button
+          expand="full"
+          (click)="handleDetailsClick(project, i)"
+          class="details-btn"
           >See Details</ion-button
         >
       </ion-card-content>
     </ion-card>
   </div>
 
-  <!-- <ion-modal *ngIf="showDetails" class="details-modal">
-    <app-portfolio-details
-      [project]="selectedProject"
-      [index]="selectedIndex"
-      (closeDetails)="closeDetails()"
-    >
-    </app-portfolio-details>
-
-  </ion-modal>-->
-  <div *ngIf="showDetails" class="testando">
-    <app-portfolio-details
-      [project]="selectedProject"
-      [index]="selectedIndex"
-      (closeDetails)="closeDetails()"
-    >
-    </app-portfolio-details>
+  <div *ngIf="showDetails" class="projectModal">
+    <div class="modalcontainer">
+      <ion-button expand="full" class="close-btn" (click)="closeDetails()">
+        <ion-icon name="close-circle-outline"></ion-icon>
+      </ion-button>
+      <app-portfolio-details
+        [project]="selectedProject"
+        [index]="selectedIndex"
+      >
+      </app-portfolio-details>
+    </div>
   </div>
 </ion-content>
+
+<!-- <ion-modal *ngIf="showDetails" class="details-modal">
+  <app-portfolio-details
+    [project]="selectedProject"
+    [index]="selectedIndex"
+    (closeDetails)="closeDetails()"
+  >
+  </app-portfolio-details>
+
+</ion-modal>-->
+
+<!-- ... -->

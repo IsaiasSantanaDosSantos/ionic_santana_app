@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button>Fechar</ion-back-button>
     </ion-buttons>
     <ion-title>{{ project.title }}</ion-title>
   </ion-toolbar>
@@ -10,15 +10,16 @@
 <ion-content class="project-content">
   <ion-card>
     <ion-card-content>
-      <h3>Description:</h3>
-      <p>{{ project.description }}</p>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-content>
       <h3>Background Image:</h3>
       <ion-img [src]="project.background" class="project-image"></ion-img>
     </ion-card-content>
   </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <h3>Description:</h3>
+      <p>{{ project.description }}</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
+<!-- <ion-button expand="full">Full</ion-button> -->
