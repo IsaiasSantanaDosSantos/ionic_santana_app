@@ -34,3 +34,38 @@ ion-button {
 .hydrated {
   border-radius: 0 !important;
 }
+.projectModal {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height:100%;
+  background-color: var(--transpDarkColor);
+  padding: 80px 20px 50px;
+}
+.modalcontainer {
+  width: 100%;
+  height: 100%;
+  background-color: var(--whiteColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  position: relative;
+}
+app-portfolio-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 11;
+}
+.hydrated {
+  border-radius: 0 !important;
+}
