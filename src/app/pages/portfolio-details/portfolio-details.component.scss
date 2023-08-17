@@ -1,10 +1,17 @@
+h3{
+  font-size: 18px;
+  font-weight: 600;
+}
 .linksBox {
-  width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 15px 0;
+  width: 97%;
+  margin: 0 auto 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px 0;
+  box-shadow: 0 0 15px -5px var(--transpDarkColor);
+  border-radius: 5px;
 }
 .linksBtn {
   text-decoration: none;
