@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: "app-portfolio-details",
@@ -9,13 +10,11 @@ export class PortfolioDetailsComponent implements OnInit {
   @Input() project: any;
   @Input() index!: number;
 
-  constructor() {}
+  constructor(private translate: TranslateService) {}
 
   ngOnInit() {
-    console.log("Project details received:", this.project);
-    console.log(this.project.title);
-    console.log(this.project.background);
-    console.log(this.project.description);
-    console.log("Index received:", this.index);
+  }
+  getTranslated(key: string): string {
+    return this.translate.instant(key);
   }
 }

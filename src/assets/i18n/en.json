@@ -80,5 +80,28 @@
       "FIRST_SKILL_NAME": "Web developer",
       "RESUME_PT": "Download CV (PT)",
       "RESUME_EN": "Download CV (EN)"
-    }
+    },
+    "PORTFOLIO": {
+      "PAGE_TITLE": "Some of my most recent projects",
+      "PROJECT_TITLE-0": "My Portfolio",
+      "PROJECT_TITLE-1": "My Portfolio app",
+      "PROJECT_TITLE-2": "API Rest",
+      "PROJECT_TITLE-3": "API Consumer",
+      "PROJECT_TITLE-4": "GolPag",
+      "PROJECT_TITLE-5": "Classic template",
+      "PROJECT_TITLE-6": "Ocean template",
+      "BUTTON": "See Details"
+  },
+  "DETAILS_PORTFOLIO": {
+    "DESCRIPTION": "Description:",
+    "LINK_PROJECT": "See Project",
+    "LINK_GITHUB": "See GitHub",
+    "DESCRIPTION-0": "This project reflects my practical experience in design implementation and interactive interactions. I highlight my creativity through web pages with a unique style, ensuring a captivating user experience. This portfolio demonstrates versatility with diverse projects, including websites and web applications. I am eager to share my work and demonstrate how I can contribute to the success of your project! Frameworks used: Vite.js and React.js. Libraries used: React-Router-Dom, React-scroll, Styled-Components, flag-icon-css, react-i18next.",
+    "DESCRIPTION-1": "",
+    "DESCRIPTION-2": "This REST API was developed using a combination of cutting-edge technologies and tools, such as Docker, Nginx, and PM2. React.js served as the foundation for development, providing a robust and flexible API. GitHub was used for efficient source code control, ensuring integrity. Hosting was done on AWS, ensuring scalability and reliability. This combination enabled the creation of a highly performant, scalable, and reliable REST API to meet the application's needs.",
+    "DESCRIPTION-3": "This application was developed using React.js to consume a Rest API that I created. It simulates a simple registration of users/employees in an educational institution, allowing the registration of students as well, including a photo and other information. The main focus of this implementation was on the creation and consumption of the Rest API, using technologies such as Nginx and PM2. Additionally, the following technologies were used: React.js, Javascript, CSS, HTML. For the construction of the application, the following libraries were used: Styled-Components, react-icons, history, axios, redux, lodash, validator, express-delay. Some of the tools used in development include: npm, Nginx, PM2.",
+    "DESCRIPTION-4": "I developed a functional and responsive landing page as part of my work as a front-end developer. I utilized modern technologies such as HTML5, CSS3, and JavaScript, implementing responsive design to adapt the page to different devices. I used Bootstrap to optimize development, providing flexible layouts and an interactive experience. The landing page highlights the transparent and powerful features of GOLPAG, with clear information and engaging design. I followed organized coding practices, ensuring code maintainability. I am proud of this work, utilizing front-end skills including HTML, CSS, and JavaScript to create functional and appealing interfaces.",
+    "DESCRIPTION-5": "I developed unique website templates for company clients using HTML, CSS, JavaScript, and Grape.js. The templates consume a custom API, bringing specific information for each client. With Grape.js, it is easy to add or remove sections as needed. This experience strengthened my front-end skills and enhanced my proficiency in Grape.js, enabling me to create customized and efficient solutions to meet client needs.",
+    "DESCRIPTION-6": "I developed unique website templates for company clients using HTML, CSS, JavaScript, and Grape.js. The templates consume a custom API, bringing specific information for each client. With Grape.js, it is easy to add or remove sections as needed. This experience strengthened my front-end skills and enhanced my proficiency in Grape.js, enabling me to create customized and efficient solutions to meet client needs."
+}
 }

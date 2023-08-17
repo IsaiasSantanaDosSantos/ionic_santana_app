@@ -62,9 +62,20 @@ app-portfolio-details {
 
 .close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: -6px;
+  right: 20px;
   z-index: 11;
+  color: var(--primaryColor);
+  background-color: var(--secundaryColor);
+  padding: 6px 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+  transform: scaleX(1.5);
+}
+.close-btn:hover{
+  filter: brightness(75%);
 }
 .hydrated {
   border-radius: 0 !important;

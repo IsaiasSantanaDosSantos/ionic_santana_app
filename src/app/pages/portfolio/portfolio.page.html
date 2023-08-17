@@ -7,13 +7,13 @@
 
 <ion-content [fullscreen]="true">
   <div id="portfolio">
-    <h1 class="homeTitle">Some of my most recent projects</h1>
+    <h1 class="homeTitle">{{ getTranslated('PORTFOLIO.PAGE_TITLE') }}</h1>
     <ion-card
       *ngFor="let project of projects; let i = index"
       class="project-card fade-up"
     >
       <ion-card-header>
-        <ion-card-title class="title">{{ project.title }}</ion-card-title>
+        <ion-card-title class="title">{{ getTranslated('PORTFOLIO.PROJECT_TITLE-'+ i) }}</ion-card-title>
       </ion-card-header>
       <ion-card-content>
         <ion-img [src]="project.background" class="project-image"></ion-img>
@@ -29,9 +29,7 @@
 
   <div *ngIf="showDetails" class="projectModal">
     <div class="modalcontainer">
-      <ion-button expand="full" class="close-btn" (click)="closeDetails()">
-        <ion-icon name="close-circle-outline"></ion-icon>
-      </ion-button>
+      <p class="close-btn" (click)="closeDetails()">X</p>
       <app-portfolio-details
         [project]="selectedProject"
         [index]="selectedIndex"
