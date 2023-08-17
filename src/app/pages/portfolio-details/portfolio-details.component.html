@@ -18,18 +18,23 @@
   <ion-card>
     <ion-card-content>
       <h3>{{ getTranslated("DETAILS_PORTFOLIO.DESCRIPTION") }}</h3>
-      <p>{{
-        getTranslated("DETAILS_PORTFOLIO.DESCRIPTION-" + index)
-      }}</p>
+      <p>{{ getTranslated("DETAILS_PORTFOLIO.DESCRIPTION-" + index) }}</p>
     </ion-card-content>
   </ion-card>
   <div class="linksBox">
-    <a class="linksBtn" target="_blank" href="{{ project.portfolio }}">{{
-      getTranslated("DETAILS_PORTFOLIO.LINK_PROJECT")
-    }}</a>
-    <a class="linksBtn" target="_blank" href="{{ project.github }}">{{
-      getTranslated("DETAILS_PORTFOLIO.LINK_GITHUB")
-    }}</a>
+    <a
+      *ngIf="project.portfolio"
+      class="linksBtn"
+      target="_blank"
+      href="{{ project.portfolio }}"
+      >{{ getTranslated("DETAILS_PORTFOLIO.LINK_PROJECT") }}</a
+    >
+    <a
+      *ngIf="project.github"
+      class="linksBtn"
+      target="_blank"
+      href="{{ project.github }}"
+      >{{ getTranslated("DETAILS_PORTFOLIO.LINK_GITHUB") }}</a
+    >
   </div>
 </ion-content>
-

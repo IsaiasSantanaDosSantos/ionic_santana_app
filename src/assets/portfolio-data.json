@@ -9,13 +9,15 @@
   {
     "title": "My Portfolio app",
     "background": "../../assets/img/app-image.jpg",
-    "description": "Descrição do Projeto 2"
+    "description": "Descrição do Projeto 2",
+    "portfolio":"",
+    "github":"https:\/\/github.com\/IsaiasSantanaDosSantos\/ionic_santana_app"
   },
   {
     "title": "API Rest",
     "background": "../../assets/img/API_Rest-imagem.jpg",
     "description": "Descrição do Projeto 3",
-    "portfolio":"https:\/\/github.com\/IsaiasSantanaDosSantos\/API_Rest-AWS",
+    "portfolio":"",
     "github":"https:\/\/github.com\/IsaiasSantanaDosSantos\/API_Rest-AWS"
   },
   {
