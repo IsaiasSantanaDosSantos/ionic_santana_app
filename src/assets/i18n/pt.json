@@ -80,5 +80,28 @@
     "FIRST_SKILL_NAME": "Desenvolvedor Web",
     "RESUME_PT": "Baixar CV (PT)",
     "RESUME_EN": "Baixar CV (EN)"
-  }
+  },
+  "PORTFOLIO": {
+    "PAGE_TITLE": "Alguns dos meus projetos mais recentes",
+    "PROJECT_TITLE-0": "Meu Portfólio",
+    "PROJECT_TITLE-1": "Meu aplicativo de portfólio",
+    "PROJECT_TITLE-2": "API Rest",
+    "PROJECT_TITLE-3": "Consumidor da API",
+    "PROJECT_TITLE-4": "GolPag",
+    "PROJECT_TITLE-5": "Template Clássico",
+    "PROJECT_TITLE-6": "Template Oceano",
+    "BUTTON": "Ver detalhes"
+  },
+  "DETAILS_PORTFOLIO": {
+    "DESCRIPTION": "Descrição:",
+    "LINK_PROJECT": "Ver Projeto",
+    "LINK_GITHUB": "Ver GitHub",
+    "DESCRIPTION-0": "Este projeto reflete minha experiência prática em implementação de design e interações interativas. Destaco minha criatividade através de páginas web com um estilo único, garantindo uma experiência cativante ao usuário. Este portfólio demonstra versatilidade com diversos projetos, incluindo websites e aplicações web. Estou ansioso para compartilhar meu trabalho e demonstrar como posso contribuir para o sucesso do seu projeto! Frameworks utilizados: Vite.js e React.js. Bibliotecas usadas: React-Router-Dom, React-scroll, Styled-Components, flag-icon-css, react-i18next.",
+    "DESCRIPTION-1": "",
+    "DESCRIPTION-2": "Essa API REST foi desenvolvida usando uma combinação de tecnologias e ferramentas de ponta, como Docker, Nginx e PM2. O React.js serviu como base para o desenvolvimento, fornecendo uma API robusta e flexível. O GitHub foi usado para controle eficiente do código-fonte, garantindo a integridade. A hospedagem foi feita na AWS, garantindo escalabilidade e confiabilidade. Essa combinação permitiu a criação de uma API REST de alto desempenho, escalonável e confiável para atender às necessidades do aplicativo.",
+    "DESCRIPTION-3": "Este aplicativo foi desenvolvido usando React.js para consumir uma API Rest que criei. Simula um simples cadastro de usuários/funcionários em uma instituição de ensino, permitindo também o cadastro de alunos, incluindo foto e outras informações. O foco principal desta implementação foi a criação e consumo da API Rest, utilizando tecnologias como Nginx e PM2. Adicionalmente, foram utilizadas as seguintes tecnologias: React.js, Javascript, CSS, HTML. Para a construção da aplicação foram utilizadas as seguintes bibliotecas: Styled-Components, react-icons, history, axios, redux, lodash, validator, express-delay. Algumas das ferramentas usadas no desenvolvimento incluem: npm, Nginx, PM2.",
+    "DESCRIPTION-4": "Desenvolvi uma landing page funcional e responsiva como parte do meu trabalho como desenvolvedor front-end. Utilizei tecnologias modernas como HTML5, CSS3 e JavaScript, implementando design responsivo para adaptar a página a diferentes dispositivos. Usei o Bootstrap para otimizar o desenvolvimento, fornecendo layouts flexíveis e uma experiência interativa. A página de destino destaca os recursos transparentes e poderosos do GOLPAG, com informações claras e design envolvente. Segui práticas de codificação organizadas, garantindo a manutenção do código. Tenho orgulho deste trabalho, utilizando habilidades front-end, incluindo HTML, CSS e JavaScript para criar interfaces funcionais e atraentes.",
+    "DESCRIPTION-5": "Desenvolvi modelos de sites exclusivos para clientes da empresa usando HTML, CSS, JavaScript e Grape.js. Os templates consomem uma API customizada, trazendo informações específicas para cada cliente. Com o Grape.js, é fácil adicionar ou remover seções conforme necessário. Essa experiência fortaleceu minhas habilidades de front-end e aprimorou minha proficiência em Grape.js, permitindo-me criar soluções personalizadas e eficientes para atender às necessidades do cliente.",
+    "DESCRIPTION-6": "Desenvolvi modelos de sites exclusivos para clientes da empresa usando HTML, CSS, JavaScript e Grape.js. Os templates consomem uma API customizada, trazendo informações específicas para cada cliente. Com o Grape.js, é fácil adicionar ou remover seções conforme necessário. Essa experiência fortaleceu minhas habilidades de front-end e aprimorou minha proficiência em Grape.js, permitindo-me criar soluções personalizadas e eficientes para atender às necessidades do cliente."
+}
 }

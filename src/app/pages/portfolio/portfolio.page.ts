@@ -16,7 +16,7 @@
 
 import { Component, OnInit } from "@angular/core";
 import { PortfolioService } from "../../portfolio.service";
-// import { PortfolioDetailsComponent } from "../../portfolio-details/portfolio-details.component";
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: "app-portfolio",
@@ -29,7 +29,10 @@ export class PortfolioComponent implements OnInit {
   public selectedIndex: any = null;
   public projects: any[] = [];
 
-  constructor(private portfolioService: PortfolioService) {}
+  constructor(
+    private portfolioService: PortfolioService,
+    private translate: TranslateService,
+  ) {}
 
   ngOnInit() {
     this.portfolioService.getProjects().subscribe((data) => {
@@ -38,12 +41,14 @@ export class PortfolioComponent implements OnInit {
     });
   }
 
+  getTranslated(key: string): string {
+    return this.translate.instant(key);
+  }
+
   handleDetailsClick(project: any, index: any): void {
     this.selectedProject = project;
     this.selectedIndex = index;
     this.showDetails = true;
-    console.log(this.showDetails);
-    console.log();
   }
 
   closeDetails(): void {

@@ -3,23 +3,33 @@
     <ion-buttons slot="start">
       <ion-back-button>Fechar</ion-back-button>
     </ion-buttons>
-    <ion-title>{{ project.title }}</ion-title>
+    <ion-title>{{
+      getTranslated("PORTFOLIO.PROJECT_TITLE-" + index)
+    }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="project-content">
   <ion-card>
     <ion-card-content>
-      <h3>Background Image:</h3>
       <ion-img [src]="project.background" class="project-image"></ion-img>
     </ion-card-content>
   </ion-card>
   <ion-card>
     <ion-card-content>
-      <h3>Description:</h3>
-      <p>{{ project.description }}</p>
+      <h3>{{ getTranslated("DETAILS_PORTFOLIO.DESCRIPTION") }}</h3>
+      <p>{{
+        getTranslated("DETAILS_PORTFOLIO.DESCRIPTION-" + index)
+      }}</p>
     </ion-card-content>
   </ion-card>
+  <div class="linksBox">
+    <a class="linksBtn" target="_blank" href="{{ project.portfolio }}">{{
+      getTranslated("DETAILS_PORTFOLIO.LINK_PROJECT")
+    }}</a>
+    <a class="linksBtn" target="_blank" href="{{ project.github }}">{{
+      getTranslated("DETAILS_PORTFOLIO.LINK_GITHUB")
+    }}</a>
+  </div>
 </ion-content>
 
-<!-- <ion-button expand="full">Full</ion-button> -->
