@@ -5,4 +5,31 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true"> </ion-content>
+<ion-content [fullscreen]="true" scrollY="false" class="pageContent">
+  <swiper-container
+    #swiper
+    (afterinit)="swiperReady()"
+    (slidechange)="swiperSlideChanged($event)"
+    [slidesPerView]="1"
+    [loop]="true"
+    [pagination]="true"
+    [zoom]="true"
+    [autoplay]="true"
+    [enabled]="true"
+    class="pageSwiper"
+  >
+    <swiper-slide *ngFor="let image of images">
+      <div class="swiper-zoom-container">
+        <img [src]="image" />
+      </div>
+    </swiper-slide>
+  </swiper-container>
+  <ion-buttons slot="center">
+    <ion-button (click)="goPrev()">
+      <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+    </ion-button>
+    <ion-button (click)="goNext()">
+      <ion-icon slot="icon-only" name="arrow-forward"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-content>
