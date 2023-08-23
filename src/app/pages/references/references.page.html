@@ -1,11 +1,12 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-menu-button slot="start"></ion-menu-button>
-    <ion-title>References</ion-title>
+    <ion-title>{{ getTranslated("REFERENCES.HEADER_TITLE") }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" scrollY="false" class="pageContent">
+  <h2 class="titlePage">{{ getTranslated("REFERENCES.PAGE_TITLE") }}</h2>
   <swiper-container
     #swiper
     (afterinit)="swiperReady()"
@@ -16,21 +17,58 @@
     [zoom]="true"
     [autoplay]="true"
     [enabled]="true"
+    [pausaOnMouseEnter]="true"
     class="pageSwiper"
   >
-    <swiper-slide *ngFor="let image of images">
-      <div class="swiper-zoom-container">
-        <img [src]="image" />
-        <p class="athorName">José Carlos</p>
-      </div>
+    <!-- <ion-buttons slot="center">
+      <ion-button (click)="goPrev()">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+      <ion-button (click)="goNext()">
+        <ion-icon slot="icon-only" name="arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-buttons>-->
+    <swiper-slide data-swiper-autoplay="6000">
+      <img
+        class="authorImg"
+        [src]="'../../../assets/img/references/Abraao_Vasconcelo.jpg'"
+      />
+      <p class="authorName">Abraão Vasconcelo</p>
+      <p class="office">{{ getTranslated("REFERENCES.OFFICE_ONE") }}</p>
+      <p class="testimony">
+        {{ getTranslated("REFERENCES.TESTIMONY_ONE") }} <br />
+        {{ getTranslated("REFERENCES.LAST-TEXT_ONE") }}
+      </p>
+    </swiper-slide>
+    <swiper-slide data-swiper-autoplay="6000">
+      <img
+        class="authorImg"
+        [src]="'../../../assets/img/references/Fabio_Francisco.jpg'"
+      />
+      <p class="authorName">Fábio Francisco de Paula</p>
+      <p class="office">{{ getTranslated("REFERENCES.OFFICE_TWO") }}</p>
+      <p class="testimony">{{ getTranslated("REFERENCES.TESTIMONY_TWO") }}</p>
+    </swiper-slide>
+    <swiper-slide data-swiper-autoplay="6000">
+      <img
+        class="authorImg"
+        [src]="'../../../assets/img/references/Kim_Frana.jpg'"
+      />
+      <p class="authorName">Kim Frana Kunz</p>
+      <p class="office">{{ getTranslated("REFERENCES.OFFICE_THREE") }}</p>
+      <p class="testimony">{{ getTranslated("REFERENCES.TESTIMONY_THREE") }}</p>
+    </swiper-slide>
+    <swiper-slide data-swiper-autoplay="6000">
+      <img
+        class="authorImg"
+        [src]="'../../../assets/img/references/Leila_Santana.jpg'"
+      />
+      <p class="authorName">Leila Santana</p>
+      <p class="office">{{ getTranslated("REFERENCES.OFFICE_FOUR") }}</p>
+      <p class="testimony">{{ getTranslated("REFERENCES.TESTIMONY_FOUR") }}</p>
     </swiper-slide>
   </swiper-container>
-  <ion-buttons slot="center">
-    <ion-button (click)="goPrev()">
-      <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
-    </ion-button>
-    <ion-button (click)="goNext()">
-      <ion-icon slot="icon-only" name="arrow-forward"></ion-icon>
-    </ion-button>
-  </ion-buttons>
+  <!-- <div class="hireMeBox">
+    <p class="goPageFormBtn">Hire me!</p>
+  </div> -->
 </ion-content>
