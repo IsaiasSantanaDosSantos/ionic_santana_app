@@ -1,0 +1,61 @@
+
+.contactContainer {
+  font-family: var(--defaultFont);
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--primaryColor) !important;
+}
+.contactTextBox {
+  margin-bottom: 20px;
+}
+.contactTextTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.contactText {
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+.formContact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+input, textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--darkGrayColor);
+  color: var(--secundaryColor);
+}
+button {
+  color: var(--primaryColor);
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--secundaryColor);
+  padding: 5px 25px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+button:hover {
+  filter: brightness(75%);
+}
