@@ -52,25 +52,23 @@ font-size: 14px;
 width: 90%;
 margin: 10px auto 20px;
 }
-// .hireMeBox {
-// width: 100%;
-// height: 50%;
-// display: flex;
-// align-items: flex-start;
-// justify-content: center;
-// }
-// .goPageFormBtn {
-// background-color: var(--primaryColor);
-// font-family: var(--defaultFont);
-// color: var(--secundaryColor);
-// font-weight: 600;
-// padding: 5px 15px;
-// cursor: pointer;
-// transition: all 0.5s;
-// }
-// .goPageFormBtn:hover{
-//   transform: scale(1.02);
-// }
-// .goPageFormBtn:active{
-//   filter: brightness(75%);
-// }
+.toLinkedInLinkBox {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+}
+.toLinkedInLink {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--secundaryColor);
+  background-color: var(--primaryColor);
+  padding: 5px 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-align: start;
+}
+.toLinkedInLink:active{
+  filter: brightness(75%);
+}
+
