@@ -22,6 +22,39 @@
   margin-bottom: 15px;
   margin-top: 0;
 }
+.contactIconsBox {
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 15px;
+}
+.contact-icons {
+  font-size: 40px;
+  color: var(--secundaryColor);
+  transition: all 0.4s;
+  animation: iconsAnimation linear 3s infinite ;
+}
+.contact-icons:hover {
+ color: var(--transpDarkColor);
+}
+@keyframes iconsAnimation {
+  0% {
+    transform: scale(0.9);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
 .formContact {
   width: 100%;
   display: flex;
@@ -45,6 +78,12 @@ input, textarea {
   border-bottom: 1px solid var(--darkGrayColor);
   color: var(--secundaryColor);
 }
+.errorMsg{
+  font-size: 13px;
+  text-align: flex-start;
+  margin:0;
+  color: var(--errorColor);
+}
 button {
   color: var(--primaryColor);
   font-weight: 700;
@@ -59,3 +98,80 @@ button {
 button:hover {
   filter: brightness(75%);
 }
+.windowSend {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: none;
+justify-content: center;
+align-items: center;
+background-color: var(--transpDarkColor);
+z-index: 15;
+&[data-show="true"] {
+  display: flex;
+}
+}
+
+.windowContainer{
+  width: 85%;
+  height: auto;
+  background-color: var(--whiteColor);
+  color: var(--secundaryColor);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+.windowClosed {
+position: absolute;
+top: 10px;
+right: 10px;
+width: auto;
+height: auto;
+}
+.windowIcon {
+  font-size: 30px;
+  color: var(--secundaryColor);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.windowIcon:hover{
+  transform: scale(1.03);
+}
+.windowIcon:active{
+  transform: rotate(-15deg);
+}
+.windowTitle {
+margin: 10px auto 0;
+font-size: 18px;
+font-weight: 700;
+text-align: center;
+}
+.windowText {
+  margin: 15px auto 0;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+}
+.windowContent {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  font-size: 45px;
+  color: var(--secundaryColor);
+  margin: 20px 0;
+}
+
+
+
+
+

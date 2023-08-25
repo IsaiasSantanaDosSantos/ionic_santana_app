@@ -117,5 +117,21 @@
     "OFFICE_FOUR":"Manicure... Operadora de Caixa",
     "TESTIMONY_FOUR":"O Isaias é dedicado e resiliente e não se deixa vencer pelas adversidades. O Isaias sempre tratou os clientes com simplicidade e empatia. Adicionalmente, possui qualidades enquanto pessoa, fundamentais em qualquer organização.",
     "LINKEDIN_LINK":"Veja no LinkedIn"
-  }
+  },
+  "CONTACT": {
+    "PAGE_TITLE":"Contato",
+    "CONTACT_TITLE": "Vamos entrar em contato.",
+    "CONTACT_TEXT":"Eu gosto de discutir novos projetos e desafios de design. Por favor, compartilhe o máximo de informações possível para que possamos aproveitar ao máximo nosso primeiro contato.",
+    "LOCATION_TITLE":"Residindo em:",
+    "LOCATION_TEXT":"Distrito Eugênio de Melo, São José dos Campos, BR.",
+    "CALL":"Ligar",
+    "FORM_TITLE":"Fazer uma estimativa do seu projeto?",
+    "NAME":"Qual é o seu nome:",
+    "PLACEHOLDER_NAME":"Nome",
+    "EMAIL":"Seu endereço de e-mail:",
+    "PLACEHOLDE_EMAIL":"E-mail",
+    "MSG":"Como posso ajudar você?",
+    "PLACEHOLDE_MSG":"Mensagem",
+    "BTN":"Enviar"
+}
 }
