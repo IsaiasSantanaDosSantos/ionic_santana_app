@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-menu-button slot="start"></ion-menu-button>
-    <ion-title>Contact</ion-title>
+    <ion-title>{{ getTranslated('CONTACT.PAGE_TITLE') }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -9,18 +9,16 @@
   <div class="contactContainer">
     <div class="contactConatiner">
       <div class="contactTextBox">
-        <p class="contactTextTitle">Let's get in touch</p>
-        <p class="contactText">
-          I enjoy discussing new projects and design challenges. Please share as
-          much info, as possible so we can get the most out of our first
-          contact.
+        <p class="contactTextTitle">
+          {{ getTranslated('CONTACT.CONTACT_TITLE') }}
+        </p>
+        <p class="contactText">{{ getTranslated('CONTACT.CONTACT_TEXT') }}</p>
+        <p class="contactText contactSubTitle">
+          <b>{{ getTranslated('CONTACT.LOCATION_TITLE') }}</b> <br />
+          {{ getTranslated('CONTACT.LOCATION_TEXT') }}
         </p>
         <p class="contactText contactSubTitle">
-          <b>Living In:</b> <br />
-          Eugenio de Melo District, São José dos Campos, BR.
-        </p>
-        <p class="contactText contactSubTitle">
-          <b>Call</b><br />
+          <b>{{ getTranslated('CONTACT.CALL') }}</b><br />
           <a href="tel:5512974011729" target="_blank" rel="noopener noreferrer"
             >(+55) 12 97401-1729
           </a>
@@ -31,6 +29,7 @@
             class="iconsLink"
             target="_blank"
             rel="noopener noreferrer"
+            ><ion-icon name="logo-linkedin" class="contact-icons"></ion-icon
           ></a>
 
           <a
@@ -38,6 +37,7 @@
             class="iconsLink"
             target="_blank"
             rel="noopener noreferrer"
+            ><ion-icon name="logo-github" class="contact-icons"></ion-icon
           ></a>
 
           <a
@@ -45,6 +45,7 @@
             class="iconsLink"
             target="_blank"
             rel="noopener noreferrer"
+            ><ion-icon name="logo-facebook" class="contact-icons"></ion-icon
           ></a>
 
           <a
@@ -52,19 +53,25 @@
             class="iconsLink"
             target="_blank"
             rel="noopener noreferrer"
+            ><ion-icon name="mail-outline" class="contact-icons"></ion-icon
           ></a>
 
           <a
             href="https://api.whatsapp.com/send?phone=551239052080"
             class="iconsLink"
+            ><ion-icon name="logo-whatsapp" class="contact-icons"></ion-icon
           ></a>
         </div>
       </div>
       <div class="contactFormBox">
-        <p class="contactTextTitle">Estimate your Project?</p>
+        <p class="contactTextTitle">
+          {{ getTranslated('CONTACT.FORM_TITLE') }}
+        </p>
         <form
+          #contactForm
           action="https://formsubmit.co/santanawebdev@gmail.com"
           class="formContact"
+          (ngSubmit)="submitForm($event)"
         >
           <input type="hidden" name="_next" value="" />
           <input
@@ -79,30 +86,66 @@
             value="Thank you for your email, we will reply as soon as possible."
           />
           <label htmlFor="name"
-            >What is Your Name:<input
+            >{{ getTranslated('CONTACT.NAME') }}<input
               type="text"
               name="name"
-              placeholder="Name"
+              [(ngModel)]="name"
+              placeholder="{{ getTranslated('CONTACT.PLACEHOLDER_NAME') }}"
           /></label>
           <label htmlFor="email"
-            >Your Email Address:<input
+            >{{ getTranslated('CONTACT.EMAIL') }}<input
               type="text"
               name="email"
-              placeholder="Email"
+              [(ngModel)]="email"
+              placeholder="{{ getTranslated('CONTACT.PLACEHOLDE_EMAIL') }}"
           /></label>
           <label htmlFor="msg"
-            >How can I Help you?<textarea
+            >{{ getTranslated('CONTACT.MSG') }}<textarea
               rows="2"
               cols="30"
               name="message"
-              placeholder="Message"
+              [(ngModel)]="message"
+              placeholder="{{ getTranslated('CONTACT.PLACEHOLDE_MSG') }}"
             ></textarea>
           </label>
-
-          <button type="submit">Send</button>
-          <span class="errorMsg"></span>
+          <span class="errorMsg">{{ errorMessage }}</span>
+          <button type="submit">{{ getTranslated('CONTACT.BTN') }}</button>
         </form>
+      </div>
+    </div>
+    <div
+      class="windowSend"
+      #windowSend
+      [attr.data-show]="showWindowSend.toString()"
+    >
+      <div class="windowContainer">
+        <span class="windowClosed"
+          ><ion-icon name="close-outline" class="windowIcon" (click)="closedWiindow()"></ion-icon
+        ></span>
+        <p class="windowTitle">Message sent successfully!</p>
+        <p class="windowText">
+          Obrigado por entrar em contato. Você receberá uma resposta em breve.
+          Visite nossas redes através dos ícones, será um prazer receber sua
+          visita.
+        </p>
+        <div class="windowContent">
+          <ion-icon
+            name="paper-plane-outline"
+            class="icons airplane"
+            *ngIf="showAirplaneIcon"
+          ></ion-icon>
+          <ion-icon
+            name="mail-outline"
+            class="icons envelop"
+            *ngIf="!showAirplaneIcon"
+          ></ion-icon>
+        </div>
       </div>
     </div>
   </div>
 </ion-content>
+
+<!-- 
+FALTA CRIAR A TRADUÇÃO PARA TODOS OS TEXTOS DA POP-UP E CRIAR A VERIFICAÇÃO DO E-MAIL E DO NOME"
+
+ -->

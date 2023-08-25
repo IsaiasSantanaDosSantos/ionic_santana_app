@@ -117,5 +117,21 @@
       "OFFICE_FOUR":"Manicurist... Cashier",
       "TESTIMONY_FOUR":"Isaias is dedicated and resilient, never allowing himself to be overcome by adversities. He has always treated clients with simplicity and empathy. Additionally, he possesses qualities as an individual that are essential in any organization.",
       "LINKEDIN_LINK":"See on LinkedIn"
-    }
+    },
+    "CONTACT": {
+      "PAGE_TITLE":"Contact",
+      "CONTACT_TITLE": "Let's get in touch",
+      "CONTACT_TEXT":"I enjoy discussing new projects and design challenges. Please share as much info, as possible so we can get the most out of our first contact.",
+      "LOCATION_TITLE":"Living In:",
+      "LOCATION_TEXT":"Eugenio de Melo District, São José dos Campos, BR.",
+      "CALL":"Call",
+      "FORM_TITLE":"Estimate your Project?",
+      "NAME":"What's your name:",
+      "PLACEHOLDER_NAME":"Name",
+      "EMAIL":"Your email address:",
+      "PLACEHOLDE_EMAIL":"Email",
+      "MSG":"How can ! help you?",
+      "PLACEHOLDE_MSG":"Message",
+      "BTN":"Send"
+  }
 }
