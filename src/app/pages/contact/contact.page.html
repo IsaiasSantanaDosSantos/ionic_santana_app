@@ -109,7 +109,9 @@
             ></textarea>
           </label>
           <span class="errorMsg">{{ errorMessage }}</span>
-          <button type="submit">{{ getTranslated('CONTACT.BTN') }}</button>
+          <button type="submit" #sendButton>
+            {{ getTranslated('CONTACT.BTN') }}
+          </button>
         </form>
       </div>
     </div>
@@ -120,14 +122,14 @@
     >
       <div class="windowContainer">
         <span class="windowClosed"
-          ><ion-icon name="close-outline" class="windowIcon" (click)="closedWiindow()"></ion-icon
+          ><ion-icon
+            name="close-outline"
+            class="windowIcon"
+            (click)="closedWiindow()"
+          ></ion-icon
         ></span>
-        <p class="windowTitle">Message sent successfully!</p>
-        <p class="windowText">
-          Obrigado por entrar em contato. Você receberá uma resposta em breve.
-          Visite nossas redes através dos ícones, será um prazer receber sua
-          visita.
-        </p>
+        <p class="windowTitle">{{ getTranslated('CONTACT.WINDOW_TITLE') }}</p>
+        <p class="windowText">{{ getTranslated('CONTACT.WINDOW_TEXT') }}</p>
         <div class="windowContent">
           <ion-icon
             name="paper-plane-outline"
@@ -146,6 +148,6 @@
 </ion-content>
 
 <!-- 
-FALTA CRIAR A TRADUÇÃO PARA TODOS OS TEXTOS DA POP-UP E CRIAR A VERIFICAÇÃO DO E-MAIL E DO NOME"
-
+  A MENSAGEM DE ERRO DO FORMULÁRIO SÓ É TRADUZIDA QUANDO CLICADO NOVAMENTE NO BOTÃO "SEND", PRECISO FAZER COM QUE ESTA SEJA
+  ATUALIZADA QUANDO CLICADO NO BOTÃO QUE ALTERA O IDIOMA, E SER ALTERADA JUNTAMENTE COM TODOS OS DEMAIS ELEMENTOS!!!
  -->

@@ -132,6 +132,8 @@
     "PLACEHOLDE_EMAIL":"E-mail",
     "MSG":"Como posso ajudar você?",
     "PLACEHOLDE_MSG":"Mensagem",
-    "BTN":"Enviar"
+    "BTN":"Enviar",
+    "WINDOW_TITLE":"Mensagem enviada com sucesso!",
+    "WINDOW_TEXT":"Obrigado por entrar em contato. Você receberá uma resposta em breve. Por favor, visite nossas redes sociais através dos ícones - ficaríamos contentes em tê-lo como nosso convidado."
 }
 }

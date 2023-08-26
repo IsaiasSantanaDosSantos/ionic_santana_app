@@ -132,6 +132,12 @@
       "PLACEHOLDE_EMAIL":"Email",
       "MSG":"How can ! help you?",
       "PLACEHOLDE_MSG":"Message",
-      "BTN":"Send"
+      "BTN":"Send",
+      "WINDOW_TITLE":"Message sent successfully!",
+      "WINDOW_TEXT":"Thank you for getting in touch. You will receive a response shortly. Feel free to visit our social media channels through the icons – we'd be delighted to have you."
   }
 }
+
+
+ 
+
