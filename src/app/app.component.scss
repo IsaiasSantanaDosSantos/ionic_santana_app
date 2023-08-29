@@ -150,7 +150,7 @@ ion-menu.md[_ngcontent-ng-c2611951915] ion-list#inbox-list[_ngcontent-ng-c261195
   line-height: 27px;
   position: relative;
   font-family: "Poppins", sans-serif;
-  animation: textColorAnimation  ease infinite 6.2s;
+  animation: textColorAnimation  ease 6.2s;
 }
 .titleMask {
   position: absolute;
@@ -176,7 +176,7 @@ ion-menu.md[_ngcontent-ng-c2611951915] ion-list#inbox-list[_ngcontent-ng-c261195
     var(--blackColor)
   );
   background-size: 330% auto;
-  animation: backgroundAnimation 7.3s linear infinite forwards;
+  animation: backgroundAnimation 7.3s linear;
 
 }
 @keyframes backgroundAnimation {
