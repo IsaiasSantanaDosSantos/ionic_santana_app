@@ -134,6 +134,11 @@
     "PLACEHOLDE_MSG":"Mensagem",
     "BTN":"Enviar",
     "WINDOW_TITLE":"Mensagem enviada com sucesso!",
-    "WINDOW_TEXT":"Obrigado por entrar em contato. Você receberá uma resposta em breve. Por favor, visite nossas redes sociais através dos ícones - ficaríamos contentes em tê-lo como nosso convidado."
+    "WINDOW_TEXT":"Obrigado por entrar em contato. Você receberá uma resposta em breve. Por favor, visite nossas redes sociais através dos ícones - ficaríamos contentes em tê-lo como nosso convidado.",
+    "ERROR_NAME_REQUIRED":"Um \"Nome\" deve ser adicionado.",
+    "ERROR_NAME_INVALID":"\"Nome\" inválido",
+    "ERROR_EMAIL_REQUIRED":"Um \"E-mail\" deve ser adicionado.",
+    "ERROR_EMAIL_INVALID":"Invalid \"Email\"",
+    "ERROR_MESSAGE_REQUIRED":"Uma \"Mensagem\" deve ser adicionada."
 }
 }
