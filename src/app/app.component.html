@@ -32,8 +32,6 @@
           </ion-menu-toggle>
         </ion-list>
       </ion-content>
-      <!-- <ion-list>
-        <ion-item> -->
       <span
         class="translateBtn flag-icon flag-icon-gb"
         (click)="toggleLanguage()"
@@ -42,13 +40,11 @@
           'flag-icon-br': selectedLanguage === 'gb'
         }"
       ></span>
-      <!-- </ion-item>
-      </ion-list> -->
 
-      <p class="phaseJesus">
+      <!-- <p class="phaseJesus">
         <span class="JesusName">Jesus</span
         >{{ getTranslated("MENU.JESUS_PHRASE") }}
-      </p>
+      </p> -->
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>
   </ion-split-pane>
