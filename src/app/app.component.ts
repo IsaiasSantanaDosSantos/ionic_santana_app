@@ -26,7 +26,6 @@ export class AppComponent implements OnInit, AfterViewInit {
   ];
   selectedLanguage: string = "gb";
 
-  // public labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];
   constructor(
     private translate: TranslateService,
     private languageService: LanguageService,
@@ -86,38 +85,6 @@ export class AppComponent implements OnInit, AfterViewInit {
   getTranslated(key: string): string {
     return this.translate.instant(key);
   }
-  // type() {
-  //   const currentWord = this.words[this.currentWordIndex];
-  //   const isComplete = !this.isDeleting && this.text === currentWord;
-  //   const isDeletingComplete = this.isDeleting && this.text === "";
-
-  //   if (isComplete) {
-  //     this.isDeleting = true;
-  //     setTimeout(() => {
-  //       this.isDeleting = false;
-  //       this.currentWordIndex = (this.currentWordIndex + 1) % this.words.length;
-  //       setTimeout(() => {
-  //         this.type();
-  //       }, 500);
-  //     }, 1500);
-  //   } else if (isDeletingComplete) {
-  //     this.text = "";
-  //     setTimeout(() => {
-  //       this.type();
-  //     }, 500);
-  //   } else if (this.isDeleting) {
-  //     this.text = currentWord.slice(0, this.text.length - 1);
-  //     setTimeout(() => {
-  //       this.type();
-  //     }, 100);
-  //   } else {
-  //     this.text = currentWord.slice(0, this.text.length + 1);
-  //     setTimeout(() => {
-  //       this.type();
-  //     }, 200);
-  //   }
-  // }
-
   type() {
     const currentWord = this.words[this.currentWordIndex];
     const totalChars = currentWord.length;
@@ -146,12 +113,3 @@ export class AppComponent implements OnInit, AfterViewInit {
     }
   }
 }
-
-/*
-   // { title: "Inbox", url: "/folder/inbox", icon: "mail" },
-      // { title: "Outbox", url: "/folder/outbox", icon: "paper-plane" },
-      // { title: "Favorites", url: "/folder/favorites", icon: "heart" },
-      // { title: "Archived", url: "/folder/archived", icon: "archive" },
-      // { title: "Trash", url: "/folder/trash", icon: "trash" },
-      // { title: "Spam", url: "/folder/spam", icon: "warning" },
-*/
