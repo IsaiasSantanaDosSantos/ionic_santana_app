@@ -134,10 +134,15 @@
       "PLACEHOLDE_MSG":"Message",
       "BTN":"Send",
       "WINDOW_TITLE":"Message sent successfully!",
-      "WINDOW_TEXT":"Thank you for getting in touch. You will receive a response shortly. Feel free to visit our social media channels through the icons – we'd be delighted to have you."
+      "WINDOW_TEXT":"Thank you for getting in touch. You will receive a response shortly. Feel free to visit our social media channels through the icons – we'd be delighted to have you.",
+      "ERROR_NAME_REQUIRED":"A \"Name\" must be added.",
+      "ERROR_NAME_INVALID":"Invalid \"Name\"",
+      "ERROR_EMAIL_REQUIRED":"An \"Email\" must be added.",
+      "ERROR_EMAIL_INVALID":"Invalid \"Email\"",
+      "ERROR_MESSAGE_REQUIRED":"A \"Message\" must be added."
   }
 }
 
 
- 
+
 
