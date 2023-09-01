@@ -1,9 +1,4 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .splashPage{
   width: 100%;
   height: 100%;
@@ -23,27 +18,34 @@
   align-items: center;
   background-color: var(--secundaryColor);
   color:  var(--whiteColor);
-  animation: heightInitialAnimation .20s ease forwards, widthInitialAnimation .20s ease forwards 0.8s;
+  animation: initialAnitation 1s ease forwards 0.8s;
 }
-@keyframes heightInitialAnimation {
+
+@keyframes initialAnitation {
   0% {
-      height: 3px;
-  }
-  100% {
-      height: 100%;
-      border-radius: 20px;
-  }
+    height: 3px;
 }
-@keyframes widthInitialAnimation {
-  0% {
-      width: 3px;
-      border-radius: 0;
-  }
-  100% {
-      width: 100%;
-      border-radius: 0;
-  }
+25% {
+    height: 100%;
+    border-radius: 20px;
 }
+50% {
+  width: 3px;
+  border-radius: 0;
+  height: 100%;
+}
+75% {
+  width: 100%;
+  border-radius: 0;
+  height: 100%;
+}
+100% {
+  width: 100%;
+  border-radius: 0;
+  height: 100%;
+}
+}
+
 .logoAnimate {
   width: auto;
   display: flex;

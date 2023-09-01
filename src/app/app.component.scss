@@ -147,7 +147,7 @@ ion-menu.md[_ngcontent-ng-c2611951915] ion-list#inbox-list[_ngcontent-ng-c261195
   text-align: start;
   margin-top: 0;
   margin-bottom: 7px;
-  line-height: 27px;
+  line-height: 23px;
   position: relative;
   font-family: "Poppins", sans-serif;
   animation: textColorAnimation  ease 6.2s;
@@ -176,7 +176,7 @@ ion-menu.md[_ngcontent-ng-c2611951915] ion-list#inbox-list[_ngcontent-ng-c261195
     var(--blackColor)
   );
   background-size: 330% auto;
-  animation: backgroundAnimation 7.3s linear;
+  animation: backgroundAnimation 3.3s linear;
 
 }
 @keyframes backgroundAnimation {
@@ -203,7 +203,7 @@ ion-menu.md[_ngcontent-ng-c2611951915] ion-list#inbox-list[_ngcontent-ng-c261195
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
-  margin-top: -10px;
+  margin-top: -7px;
   width: 100%;
   text-align: start;
 }
@@ -214,10 +214,12 @@ ion-menu.md[_ngcontent-ng-c2611951915] ion-list#inbox-list[_ngcontent-ng-c261195
   margin: auto;
 }
 .flag-icon {
-  font-size: 25px;
+  font-size: 30px;
   transition: all 0.4s;
   box-shadow: 0 0 22px -7px var(--secundaryColor);
   margin-bottom: 60px;
+  width: 36px;
+  height: 27px;
 }
 .flag-icon:hover {
   transform: scale(1.03);

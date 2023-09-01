@@ -10,7 +10,6 @@ export class PortfolioService {
   constructor(private http: HttpClient) {}
 
   getProjects(): Observable<any> {
-    // return this.http.get<any>("../app/projects/portfolio-data.json");
     return this.http.get<any[]>(this.dataUrl);
   }
 }

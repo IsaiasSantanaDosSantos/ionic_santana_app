@@ -1,9 +1,16 @@
+ion-content {
+  position: relative;
+  padding-bottom: 90px !important;
+}
 h3{
   font-size: 18px;
   font-weight: 600;
 }
 .linksBox {
-  width: 97%;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  height: 65px;
   margin: 0 auto 15px;
   display: flex;
   flex-wrap: wrap;

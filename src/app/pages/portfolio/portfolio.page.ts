@@ -1,19 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-portfolio',
-//   templateUrl: './portfolio.page.html',
-//   styleUrls: ['./portfolio.page.scss'],
-// })
-// export class PortfolioPage implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit() {
-//   }
-
-// }
-
 import { Component, OnInit } from "@angular/core";
 import { PortfolioService } from "../../portfolio.service";
 import { TranslateService } from "@ngx-translate/core";

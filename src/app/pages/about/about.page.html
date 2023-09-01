@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-menu-button slot="start"></ion-menu-button>
-    <ion-title>About Me</ion-title>
+    <ion-title>{{ getTranslated('ABOUT_ME.PAGE_TITLE_HEADER') }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -66,12 +66,12 @@
               ></span
             >
           </p>
-          <p>
+          <!-- <p>
             {{ getTranslated('ABOUT_ME.DATE_OF_BIRTH') }}<br /><span
               class="contact-info"
               >{{ getTranslated('ABOUT_ME.DATE') }}</span
             >
-          </p>
+          </p> -->
           <p>
             {{ getTranslated('ABOUT_ME.FROM') }}<br /><span class="contact-info"
               ><a class="loacation" href="https://goo.gl/maps/9HeL7UpRSsWs5FU38"

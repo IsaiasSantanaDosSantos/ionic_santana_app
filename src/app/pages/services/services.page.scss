@@ -19,6 +19,7 @@
   align-items: flex-start;
   row-gap: 30px;
   column-gap: 20px;
+  padding-bottom: 50px;
 }
 .services-cards {
   max-width: 150px;
@@ -29,7 +30,7 @@
   align-items: center;
 }
 ion-icon {
-  font-size: 35px;
+  font-size: 45px;
   color: var(--secundaryColor);
   padding: 6px !important;
   border-radius: 50%;
@@ -41,9 +42,9 @@ ion-icon {
   font-weight: 700;
   text-align: center;
   margin-bottom: 15px;
-  font-size:16px
+  font-size:17px
 }
 .services-cards-text {
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }

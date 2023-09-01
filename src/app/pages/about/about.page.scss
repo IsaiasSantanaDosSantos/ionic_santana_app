@@ -4,7 +4,7 @@ ion-content {
 .subTitle {
   text-align: center;
     margin: 15px auto 30px;
-    max-width: 217px;
+    max-width: 280px;
     width: 100%;
     background-color: var(--primaryColor);
     padding: 5px 10px;
@@ -25,7 +25,7 @@ ion-content {
   border-bottom: 2px solid var(--primaryColor);
 }
 .normal-text {
-  font-size: 15px;
+  font-size: 16px;
   text-align: center;
 }
 .about-experience {
@@ -45,7 +45,7 @@ ion-content {
   margin: 0;
 }
 .zoom {
-  font-size: 95px;
+  font-size: 115px;
   font-weight: 600;
   z-index: 1;
   animation: zoomAnimation 2s  linear 8s forwards;
@@ -102,7 +102,7 @@ ion-content {
 .about-contact {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   row-gap: 20px;

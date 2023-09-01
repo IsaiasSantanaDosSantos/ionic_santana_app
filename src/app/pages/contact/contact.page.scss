@@ -1,4 +1,3 @@
-
 .contactContainer {
   font-family: var(--defaultFont);
   width: 100%;
@@ -10,7 +9,7 @@
   background-color: var(--primaryColor) !important;
 }
 .contactTextBox {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .contactTextTitle {
   font-size: 20px;
@@ -28,6 +27,7 @@
   justify-content: flex-start;
   align-items: center;
   column-gap: 15px;
+  margin-top: 35px;
 }
 .contact-icons {
   font-size: 30px;
@@ -61,6 +61,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  padding-bottom: 20px;
 }
 label {
   width: 100%;
