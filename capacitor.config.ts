@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'santana-app',
+  appName: 'Santana App',
   webDir: 'www',
   server: {
     androidScheme: 'https'
