@@ -150,7 +150,7 @@ ion-menu.md[_ngcontent-ng-c2611951915] ion-list#inbox-list[_ngcontent-ng-c261195
   line-height: 23px;
   position: relative;
   font-family: "Poppins", sans-serif;
-  animation: textColorAnimation  ease 6.2s;
+  animation: textColorAnimation 3.6s linear;
 }
 .titleMask {
   position: absolute;
@@ -189,14 +189,20 @@ ion-menu.md[_ngcontent-ng-c2611951915] ion-list#inbox-list[_ngcontent-ng-c261195
 }
 @keyframes textColorAnimation {
   0% {
-    color: transparent;
+    color: var(--blackColor);
+  }
+  25% {
+    color: var(--blackColor);
   }
   50% {
+    color: transparent;
+  }
+  75% {
       color: transparent;
     }
   100% {
     color: var(--blackColor);
-}
+  }
 }
 .logoSubtitle {
   font-size: 10px;
